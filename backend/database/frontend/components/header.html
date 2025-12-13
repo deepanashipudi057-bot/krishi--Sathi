@@ -1,0 +1,565 @@
+<!-- Header Component for Krishi Sathi Application -->
+<header class="header" id="main-header">
+    <div class="container">
+        <!-- Logo Section -->
+        <div class="logo">
+            <a href="index.html" class="logo-link">
+                <span class="logo-icon">🌾</span>
+                <span class="logo-text">
+                    <span class="logo-name">Krishi Sathi</span>
+                    <span class="logo-subtitle">कृषि साथी</span>
+                </span>
+            </a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+
+        <!-- Navigation Menu -->
+        <nav class="nav-menu" id="navMenu">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" data-translate="nav-home">
+                        <span class="nav-icon">🏠</span>
+                        <span class="nav-text">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="weather.html" class="nav-link" data-translate="nav-weather">
+                        <span class="nav-icon">🌤️</span>
+                        <span class="nav-text">Weather</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="seeds-crops.html" class="nav-link" data-translate="nav-seeds">
+                        <span class="nav-icon">🌱</span>
+                        <span class="nav-text">Seeds & Crops</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="pesticides.html" class="nav-link" data-translate="nav-pesticides">
+                        <span class="nav-icon">🧪</span>
+                        <span class="nav-text">Pesticides</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="schemes.html" class="nav-link" data-translate="nav-schemes">
+                        <span class="nav-icon">💰</span>
+                        <span class="nav-text">Schemes</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Language Selector -->
+        <div class="language-selector-wrapper">
+            <label for="languageSelect" class="language-label">
+                <span class="language-icon">🌐</span>
+            </label>
+            <select id="languageSelect" class="language-select" onchange="changeLanguage()" aria-label="Select language">
+                <option value="en">English</option>
+                <option value="hi">हिन्दी</option>
+                <option value="mr">मराठी</option>
+                <option value="kn">ಕನ್ನಡ</option>
+            </select>
+        </div>
+
+        <!-- Voice Assistant Quick Access -->
+        <button class="header-voice-btn" id="headerVoiceBtn" aria-label="Voice Assistant">
+            <span class="voice-icon">🎤</span>
+            <span class="voice-text" data-translate="voice-assistant">Voice</span>
+        </button>
+    </div>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+</header>
+
+<!-- Breadcrumb Navigation (Optional) -->
+<nav class="breadcrumb" id="breadcrumb" aria-label="Breadcrumb" style="display: none;">
+    <div class="container">
+        <ol class="breadcrumb-list">
+            <li class="breadcrumb-item">
+                <a href="index.html" data-translate="nav-home">Home</a>
+            </li>
+            <li class="breadcrumb-item active" id="currentPage">
+                <!-- Current page will be dynamically inserted -->
+            </li>
+        </ol>
+    </div>
+</nav>
+
+<style>
+/* Header Styles */
+.header {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.header.scrolled {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Logo Styles */
+.logo {
+    flex-shrink: 0;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.logo-link:hover {
+    transform: scale(1.05);
+}
+
+.logo-icon {
+    font-size: 36px;
+    line-height: 1;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2d5016;
+    line-height: 1.2;
+}
+
+.logo-subtitle {
+    font-size: 14px;
+    color: #4a7c2c;
+    font-weight: 500;
+}
+
+/* Navigation Menu */
+.nav-menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 5px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+    background: #e8f5e9;
+    color: #2d5016;
+    transform: translateY(-2px);
+}
+
+.nav-link.active {
+    background: #2d5016;
+    color: white;
+}
+
+.nav-link.active .nav-icon {
+    animation: bounce 1s ease infinite;
+}
+
+.nav-icon {
+    font-size: 18px;
+}
+
+.nav-text {
+    font-size: 15px;
+}
+
+/* Language Selector */
+.language-selector-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 15px;
+}
+
+.language-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.language-icon {
+    font-size: 20px;
+}
+
+.language-select {
+    padding: 8px 12px;
+    border: 2px solid #2d5016;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    background: white;
+    color: #2d5016;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.language-select:hover {
+    background: #e8f5e9;
+    border-color: #4a7c2c;
+}
+
+.language-select:focus {
+    box-shadow: 0 0 0 3px rgba(45, 80, 22, 0.1);
+}
+
+/* Header Voice Button */
+.header-voice-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 16px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 15px;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.header-voice-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.voice-icon {
+    font-size: 16px;
+}
+
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+}
+
+.hamburger-line {
+    width: 100%;
+    height: 3px;
+    background: #2d5016;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-toggle.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.mobile-menu-toggle.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-toggle.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Mobile Overlay */
+.mobile-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+
+.mobile-overlay.active {
+    display: block;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    background: #f8f9fa;
+    padding: 12px 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.breadcrumb-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+    align-items: center;
+}
+
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-item::after {
+    content: '›';
+    margin-left: 10px;
+    color: #6c757d;
+    font-size: 18px;
+}
+
+.breadcrumb-item:last-child::after {
+    content: '';
+}
+
+.breadcrumb-item a {
+    color: #2d5016;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-item a:hover {
+    color: #4a7c2c;
+    text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+    color: #6c757d;
+    font-weight: 400;
+}
+
+/* Animations */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .nav-text {
+        display: none;
+    }
+    
+    .nav-link {
+        padding: 10px;
+    }
+    
+    .header-voice-btn .voice-text {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: flex;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 280px;
+        height: 100vh;
+        background: white;
+        padding: 80px 20px 20px;
+        transition: left 0.3s ease;
+        z-index: 999;
+        overflow-y: auto;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav-link {
+        width: 100%;
+        padding: 15px;
+        justify-content: flex-start;
+    }
+    
+    .nav-text {
+        display: inline;
+    }
+    
+    .language-selector-wrapper {
+        margin-left: auto;
+    }
+    
+    .header-voice-btn {
+        padding: 10px;
+        margin-left: 10px;
+    }
+    
+    .logo-name {
+        font-size: 20px;
+    }
+    
+    .logo-subtitle {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header .container {
+        padding: 12px 15px;
+    }
+    
+    .logo-icon {
+        font-size: 28px;
+    }
+    
+    .logo-name {
+        font-size: 18px;
+    }
+    
+    .logo-subtitle {
+        display: none;
+    }
+    
+    .language-select {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}
+</style>
+
+<script>
+// Header functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const header = document.getElementById('main-header');
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const navMenu = document.getElementById('navMenu');
+    const mobileOverlay = document.getElementById('mobileOverlay');
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    // Sticky header on scroll
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+        
+        lastScroll = currentScroll;
+    });
+    
+    // Mobile menu toggle
+    if (mobileMenuToggle && navMenu && mobileOverlay) {
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenuToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            mobileOverlay.classList.toggle('active');
+            document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+        });
+        
+        mobileOverlay.addEventListener('click', () => {
+            mobileMenuToggle.classList.remove('active');
+            navMenu.classList.remove('active');
+            mobileOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    }
+    
+    // Set active navigation link
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    navLinks.forEach(link => {
+        const linkPage = link.getAttribute('href');
+        if (linkPage === currentPage) {
+            link.classList.add('active');
+        }
+        
+        // Close mobile menu on link click
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                mobileMenuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+                mobileOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    });
+    
+    // Update breadcrumb
+    const breadcrumb = document.getElementById('breadcrumb');
+    const currentPageElement = document.getElementById('currentPage');
+    
+    if (currentPage !== 'index.html' && breadcrumb && currentPageElement) {
+        const pageTitles = {
+            'weather.html': 'Weather Forecast',
+            'seeds-crops.html': 'Seeds & Crops',
+            'pesticides.html': 'Pesticides & Fertilizers',
+            'schemes.html': 'Government Schemes'
+        };
+        
+        const pageTitle = pageTitles[currentPage];
+        if (pageTitle) {
+            currentPageElement.textContent = pageTitle;
+            breadcrumb.style.display = 'block';
+        }
+    }
+});
+</script>

@@ -1,0 +1,269 @@
+{
+  "government_schemes": [
+    {
+      "id": 1,
+      "scheme_type": "subsidy",
+      "eligibility": "All landholding farmers",
+      "amount_range": "₹6,000 per year",
+      "installments": "3 equal installments of ₹2,000",
+      "contact_info": "155261 (Toll-free)",
+      "website": "https://pmkisan.gov.in",
+      "active": true,
+      "state": "national",
+      "translations": {
+        "en": {
+          "scheme_name": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
+          "description": "Income support scheme providing direct cash transfer to landholding farmers to supplement their financial needs for procuring various inputs.",
+          "benefits": "Financial assistance of ₹6,000 per year in three equal installments of ₹2,000 each, directly transferred to farmers' bank accounts.",
+          "application_process": "Visit pmkisan.gov.in and register with Aadhaar number. Contact local agriculture office or fill online form. Documents required: Land records, Aadhaar, Bank details.",
+          "required_documents": "Land ownership papers, Aadhaar card, Bank account details, Mobile number",
+          "eligibility_details": "All landholding farmers with cultivable land up to 2 hectares",
+          "timeline": "Applications processed within 7-10 days",
+          "support_contact": "Helpline: 155261, Email: pmkisan-ict@gov.in"
+        },
+        "hi": {
+          "scheme_name": "पीएम-किसान (प्रधानमंत्री किसान सम्मान निधि)",
+          "description": "विभिन्न इनपुट खरीदने के लिए किसानों की वित्तीय आवश्यकताओं को पूरा करने के लिए सीधे नकद हस्तांतरण प्रदान करने वाली आय सहायता योजना।",
+          "benefits": "प्रति वर्ष ₹6,000 की वित्तीय सहायता तीन समान किस्तों में ₹2,000 प्रत्येक, सीधे किसानों के बैंक खातों में स्थानांतरित।",
+          "application_process": "pmkisan.gov.in पर जाएं और आधार नंबर के साथ पंजीकरण करें। स्थानीय कृषि कार्यालय से संपर्क करें या ऑनलाइन फॉर्म भरें।",
+          "required_documents": "भूमि स्वामित्व पत्र, आधार कार्ड, बैंक खाता विवरण, मोबाइल नंबर",
+          "eligibility_details": "2 हेक्टेयर तक की कृषि योग्य भूमि वाले सभी भूमिधारक किसान",
+          "timeline": "आवेदनों को 7-10 दिनों के भीतर संसाधित किया जाता है",
+          "support_contact": "हेल्पलाइन: 155261, ईमेल: pmkisan-ict@gov.in"
+        },
+        "mr": {
+          "scheme_name": "पीएम-किसान (प्रधानमंत्री किसान सम्मान निधि)",
+          "description": "विविध इनपुट खरेदी करण्यासाठी शेतकऱ्यांच्या आर्थिक गरजांना पूरक करण्यासाठी थेट रोख हस्तांतरण प्रदान करणारी उत्पन्न सहायता योजना.",
+          "benefits": "प्रति वर्ष ₹6,000 ची आर्थिक सहायता तीन समान हप्त्यांमध्ये ₹2,000 प्रत्येक, थेट शेतकऱ्यांच्या बँक खात्यांमध्ये हस्तांतरित.",
+          "application_process": "pmkisan.gov.in ला भेट द्या आणि आधार क्रमांकासह नोंदणी करा. स्थानिक कृषी कार्यालयाशी संपर्क साधा किंवा ऑनलाइन फॉर्म भरा.",
+          "required_documents": "जमीन मालकीचे कागदपत्रे, आधार कार्ड, बँक खाते तपशील, मोबाइल नंबर",
+          "eligibility_details": "2 हेक्टरपर्यंत कृषीयोग्य जमीन असलेले सर्व जमीनधारक शेतकरी",
+          "timeline": "अर्ज 7-10 दिवसांच्या आत प्रक्रिया केले जातात",
+          "support_contact": "हेल्पलाइन: 155261, ईमेल: pmkisan-ict@gov.in"
+        },
+        "kn": {
+          "scheme_name": "ಪಿಎಂ-ಕಿಸಾನ್ (ಪ್ರಧಾನ ಮಂತ್ರಿ ಕಿಸಾನ್ ಸಮ್ಮಾನ್ ನಿಧಿ)",
+          "description": "ವಿವಿಧ ಇನ್‌ಪುಟ್‌ಗಳನ್ನು ಖರೀದಿಸಲು ರೈತರ ಆರ್ಥಿಕ ಅಗತ್ಯಗಳನ್ನು ಪೂರೈಸಲು ನೇರ ನಗದ್ಯ ಹಸ್ತಾಂತರವನ್ನು ಒದಗಿಸುವ ಆದಾಯ ಬೆಂಬಲ ಯೋಜನೆ.",
+          "benefits": "ಪ್ರತಿ ವರ್ಷ ₹6,000 ಆರ್ಥಿಕ ನೆರವು ಮೂರು ಸಮಾನ ಕಂತುಗಳಲ್ಲಿ ₹2,000 ಪ್ರತಿ, ನೇರವಾಗಿ ರೈತರ ಬ್ಯಾಂಕ್ ಖಾತೆಗಳಿಗೆ ಹಸ್ತಾಂತರಿಸಲಾಗುತ್ತದೆ.",
+          "application_process": "pmkisan.gov.in ಗೆ ಭೇಟಿ ನೀಡಿ ಮತ್ತು ಆಧಾರ್ ಸಂಖ್ಯೆಯೊಂದಿಗೆ ನೋಂದಣಿ ಮಾಡಿ. ಸ್ಥಳೀಯ ಕೃಷಿ ಕಛೇರಿಯನ್ನು ಸಂಪರ್ಕಿಸಿ ಅಥವಾ ಆನ್‌ಲೈನ್ ಫಾರ್ಮ್ ಭರ್ತಿ ಮಾಡಿ.",
+          "required_documents": "ಭೂಮಿ ಮಾಲೀಕತ್ವದ ಪತ್ರಗಳು, ಆಧಾರ್ ಕಾರ್ಡ್, ಬ್ಯಾಂಕ್ ಖಾತೆ ವಿವರಗಳು, ಮೊಬೈಲ್ ಸಂಖ್ಯೆ",
+          "eligibility_details": "2 ಹೆಕ್ಟೇರ್‌ಗಳವರೆಗೆ ಕೃಷಿ ಯೋಗ್ಯ ಭೂಮಿ ಹೊಂದಿರುವ ಎಲ್ಲಾ ಭೂಮಿಧಾರಕ ರೈತರು",
+          "timeline": "ಅರ್ಜಿಗಳನ್ನು 7-10 ದಿನಗಳಲ್ಲಿ ಸಂಸ್ಕರಿಸಲಾಗುತ್ತದೆ",
+          "support_contact": "ಹೆಲ್ಪ್‌ಲೈನ್: 155261, ಇಮೇಲ್: pmkisan-ict@gov.in"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "scheme_type": "insurance",
+      "eligibility": "All farmers with insurable crops",
+      "amount_range": "Premium: 2% for Kharif, 1.5% for Rabi",
+      "installments": "N/A",
+      "contact_info": "1800-180-1551",
+      "website": "https://pmfby.gov.in",
+      "active": true,
+      "state": "national",
+      "translations": {
+        "en": {
+          "scheme_name": "PMFBY (Pradhan Mantri Fasal Bima Yojana)",
+          "description": "Crop insurance scheme providing financial support to farmers suffering crop loss/damage arising from unforeseen events.",
+          "benefits": "Comprehensive risk insurance at low premium. Coverage for pre-sowing to post-harvest risks. Quick claim settlement within 2 months.",
+          "application_process": "Apply through banks, agriculture offices, or online at pmfby.gov.in. Premium: 2% for Kharif crops, 1.5% for Rabi crops.",
+          "required_documents": "Land records, Crop sowing certificate, Bank account details, Aadhaar card",
+          "eligibility_details": "All farmers growing notified crops in notified areas",
+          "timeline": "Claims settled within 2 months of crop loss assessment",
+          "support_contact": "Helpline: 1800-180-1551, Email: pmfbycell@gov.in"
+        },
+        "hi": {
+          "scheme_name": "पीएमएफबीवाई (प्रधानमंत्री फसल बीमा योजना)",
+          "description": "अप्रत्याशित घटनाओं से उत्पन्न फसल हानि/क्षति से पीड़ित किसानों को वित्तीय सहायता प्रदान करने वाली फसल बीमा योजना।",
+          "benefits": "कम प्रीमियम पर व्यापक जोखिम बीमा। बुवाई पूर्व से कटाई पश्चात जोखिमों के लिए कवरेज। 2 महीने के भीतर त्वरित दावा निपटान।",
+          "application_process": "बैंकों, कृषि कार्यालयों के माध्यम से या pmfby.gov.in पर ऑनलाइन आवेदन करें। प्रीमियम: खरीफ के लिए 2%, रबी के लिए 1.5%।",
+          "required_documents": "भूमि रिकॉर्ड, फसल बुवाई प्रमाण पत्र, बैंक खाता विवरण, आधार कार्ड",
+          "eligibility_details": "सूचित क्षेत्रों में सूचित फसलें उगाने वाले सभी किसान",
+          "timeline": "फसल हानि मूल्यांकन के 2 महीने के भीतर दावे निपटाए जाते हैं",
+          "support_contact": "हेल्पलाइन: 1800-180-1551, ईमेल: pmfbycell@gov.in"
+        },
+        "mr": {
+          "scheme_name": "पीएमएफबीवाई (प्रधानमंत्री फसल बीमा योजना)",
+          "description": "अप्रत्याशित घटनांमुळे निर्माण झालेल्या पिकांच्या नुकसानी/हानीवर पीडित शेतकऱ्यांना आर्थिक सहाय्य प्रदान करणारी पिक विमा योजना.",
+          "benefits": "कमी प्रीमियमवर सर्वसमावेशक जोखिम विमा. पेरणीपूर्व ते काढणीपर्यंतच्या जोखिमांसाठी कव्हरेज. 2 महिन्यांच्या आत जलद दावा निपटारा.",
+          "application_process": "बँकांद्वारे, कृषी कार्यालयांद्वारे किंवा pmfby.gov.in वर ऑनलाइन अर्ज करा. प्रीमियम: खरीप पिकांसाठी 2%, रब्बी पिकांसाठी 1.5%.",
+          "required_documents": "जमीन रेकॉर्ड, पिक पेरणी प्रमाणपत्र, बँक खाते तपशील, आधार कार्ड",
+          "eligibility_details": "सूचित क्षेत्रांमध्ये सूचित पिके घेणारे सर्व शेतकरी",
+          "timeline": "पिक नुकसानी मूल्यांकनाच्या 2 महिन्यांच्या आत दावे निपटतात",
+          "support_contact": "हेल्पलाइन: 1800-180-1551, ईमेल: pmfbycell@gov.in"
+        },
+        "kn": {
+          "scheme_name": "ಪಿಎಂಎಫ್‌ಬಿವೈ (ಪ್ರಧಾನ ಮಂತ್ರಿ ಫಸಲ್ ಬಿಮಾ ಯೋಜನೆ)",
+          "description": "ಅನಿರೀಕ್ಷಿತ ಘಟನೆಗಳಿಂದ ಉಂಟಾದ ಬೆಳೆ ನಷ್ಟ/ಹಾನಿಯಿಂದ ಬಳಲುತ್ತಿರುವ ರೈತರಿಗೆ ಆರ್ಥಿಕ ಬೆಂಬಲವನ್ನು ಒದಗಿಸುವ ಬೆಳೆ ವಿಮಾ ಯೋಜನೆ.",
+          "benefits": "ಕಡಿಮೆ ಪ್ರೀಮಿಯಂನಲ್ಲಿ ಸಮಗ್ರ ಜೊತೆಗಿನ ವಿಮೆ. ಬೀಜ ಬಿಡುಗಡೆಯಿಂದ ಕೊಯ್ಲಿನ ನಂತರದ ಜೊತೆಗಿನ ಕವರೇಜ್. 2 ತಿಂಗಳಲ್ಲಿ ತ್ವರಿತ ಹಕ್ಕು ನಿರ್ಧಾರ.",
+          "application_process": "ಬ್ಯಾಂಕ್‌ಗಳ ಮೂಲಕ, ಕೃಷಿ ಕಛೇರಿಗಳ ಮೂಲಕ ಅಥವಾ pmfby.gov.in ನಲ್ಲಿ ಆನ್‌ಲೈನ್ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ. ಪ್ರೀಮಿಯಂ: ಖರೀಫ್ ಬೆಳೆಗಳಿಗೆ 2%, ರಬ್ಬಿ ಬೆಳೆಗಳಿಗೆ 1.5%.",
+          "required_documents": "ಭೂಮಿ ದಾಖಲೆಗಳು, ಬೆಳೆ ಬೀಜ ಬಿಡುಗಡೆ ಪ್ರಮಾಣಪತ್ರ, ಬ್ಯಾಂಕ್ ಖಾತೆ ವಿವರಗಳು, ಆಧಾರ್ ಕಾರ್ಡ್",
+          "eligibility_details": "ಸೂಚಿಸಿದ ಪ್ರದೇಶಗಳಲ್ಲಿ ಸೂಚಿಸಿದ ಬೆಳೆಗಳನ್ನು ಬೆಳೆಸುವ ಎಲ್ಲಾ ರೈತರು",
+          "timeline": "ಬೆಳೆ ನಷ್ಟ ಮೌಲ್ಯಮಾಪನದ 2 ತಿಂಗಳಲ್ಲಿ ಹಕ್ಕುಗಳನ್ನು ನಿರ್ಧರಿಸಲಾಗುತ್ತದೆ",
+          "support_contact": "ಹೆಲ್ಪ್‌ಲೈನ್: 1800-180-1551, ಇಮೇಲ್: pmfbycell@gov.in"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "scheme_type": "loan",
+      "eligibility": "Small and marginal farmers",
+      "amount_range": "Up to ₹3 lakh",
+      "installments": "Flexible repayment",
+      "contact_info": "1800-200-0001",
+      "website": "https://www.kisancreditcard.org",
+      "active": true,
+      "state": "national",
+      "translations": {
+        "en": {
+          "scheme_name": "Kisan Credit Card (KCC)",
+          "description": "Credit facility scheme for farmers to meet their short-term credit requirements for cultivation of crops.",
+          "benefits": "Credit limit up to ₹3 lakh. Interest subvention of 2% on timely repayment. ATM-cum-Debit card facility.",
+          "application_process": "Apply at nearest bank branch with land records and identity proof. Online application available on bank websites.",
+          "required_documents": "Land records, Identity proof, Address proof, Bank account details",
+          "eligibility_details": "Small and marginal farmers with cultivable land holding",
+          "timeline": "Processing within 7-15 days after document verification",
+          "support_contact": "Helpline: 1800-200-0001, Website: kisancreditcard.org"
+        },
+        "hi": {
+          "scheme_name": "किसान क्रेडिट कार्ड (केएसीसी)",
+          "description": "फसलों की खेती के लिए किसानों की अल्पकालिक क्रेडिट आवश्यकताओं को पूरा करने के लिए क्रेडिट सुविधा योजना।",
+          "benefits": "₹3 लाख तक की क्रेडिट सीमा। समय पर चुकौती पर 2% ब्याज सबवेंशन। एटीएम-कम-डेबिट कार्ड सुविधा।",
+          "application_process": "निकटतम बैंक शाखा में भूमि रिकॉर्ड और पहचान प्रमाण के साथ आवेदन करें। बैंक वेबसाइटों पर ऑनलाइन आवेदन उपलब्ध।",
+          "required_documents": "भूमि रिकॉर्ड, पहचान प्रमाण, पता प्रमाण, बैंक खाता विवरण",
+          "eligibility_details": "कृषि योग्य भूमि धारण वाले लघु और सीमांत किसान",
+          "timeline": "दस्तावेज सत्यापन के बाद 7-15 दिनों के भीतर प्रसंस्करण",
+          "support_contact": "हेल्पलाइन: 1800-200-0001, वेबसाइट: kisancreditcard.org"
+        },
+        "mr": {
+          "scheme_name": "किसान क्रेडिट कार्ड (केएसीसी)",
+          "description": "पिकांच्या लागवडीसाठी शेतकऱ्यांच्या अल्पकालीन क्रेडिट गरजांना पूर्ण करण्यासाठी क्रेडिट सुविधा योजना.",
+          "benefits": "₹3 लाख पर्यंत क्रेडिट मर्यादा. वेळेवर परतफेडीवर 2% व्याज सबव्हेन्शन. एटीएम-कम-डेबिट कार्ड सुविधा.",
+          "application_process": "जमीन रेकॉर्ड आणि ओळख पुरावा घेऊन जवळच्या बँक शाखेत अर्ज करा. बँक वेबसाइटवर ऑनलाइन अर्ज उपलब्ध.",
+          "required_documents": "जमीन रेकॉर्ड, ओळख पुरावा, पत्ता पुरावा, बँक खाते तपशील",
+          "eligibility_details": "कृषीयोग्य जमीनधारणा असलेले लहान आणि सीमांत शेतकरी",
+          "timeline": "दस्तऐवज पडताळणी नंतर 7-15 दिवसांच्या आत प्रक्रिया",
+          "support_contact": "हेल्पलाइन: 1800-200-0001, वेबसाइट: kisancreditcard.org"
+        },
+        "kn": {
+          "scheme_name": "ಕಿಸಾನ್ ಕ್ರೆಡಿಟ್ ಕಾರ್ಡ್ (ಕಿಸಿಕಿಸಿ)",
+          "description": "ಬೆಳೆಗಳ ಸಾಕಾಣಿಕೆಗಾಗಿ ರೈತರ ಕಿರುಕಾಲ ಕ್ರೆಡಿಟ್ ಅಗತ್ಯಗಳನ್ನು ಪೂರೈಸಲು ಕ್ರೆಡಿಟ್ ಸೌಲಭ್ಯ ಯೋಜನೆ.",
+          "benefits": "₹3 ಲಕ್ಷದವರೆಗೆ ಕ್ರೆಡಿಟ್ ಮಿತಿ. ಸಮಯಕ್ಕೆ ಪಾವತಿಯ ಮೇಲೆ 2% ಬಡ್ಡಿ ಸಬ್‌ವೆನ್‌ಶನ್. ಎಟಿಎಂ-ಕಮ್-ಡೆಬಿಟ್ ಕಾರ್ಡ್ ಸೌಲಭ್ಯ.",
+          "application_process": "ಭೂಮಿ ದಾಖಲೆಗಳು ಮತ್ತು ಗುರುತಿನ ಪುರಾವೆಯೊಂದಿಗೆ ಹತ್ತಿರದ ಬ್ಯಾಂಕ್ ಶಾಖೆಯಲ್ಲಿ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ. ಬ್ಯಾಂಕ್ ವೆಬ್‌ಸೈಟ್‌ಗಳಲ್ಲಿ ಆನ್‌ಲೈನ್ ಅರ್ಜಿ ಲಭ್ಯ.",
+          "required_documents": "ಭೂಮಿ ದಾಖಲೆಗಳು, ಗುರುತಿನ ಪುರಾವೆ, ವಿಳಾಸದ ಪುರಾವೆ, ಬ್ಯಾಂಕ್ ಖಾತೆ ವಿವರಗಳು",
+          "eligibility_details": "ಕೃಷಿ ಯೋಗ್ಯ ಭೂಮಿ ಹೊಂದಿರುವ ಚಿಕ್ಕ ಮತ್ತು ಅಂಚೆ ರೈತರು",
+          "timeline": "ದಾಖಲೆ ಪರಿಶೀಲನೆಯ ನಂತರ 7-15 ದಿನಗಳಲ್ಲಿ ಸಂಸ್ಕರಣೆ",
+          "support_contact": "ಹೆಲ್ಪ್‌ಲೈನ್: 1800-200-0001, ವೆಬ್‌ಸೈಟ್: kisancreditcard.org"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "scheme_type": "subsidy",
+      "eligibility": "Farmers adopting organic farming",
+      "amount_range": "₹20,000 per hectare",
+      "installments": "One-time payment",
+      "contact_info": "1800-180-1551",
+      "website": "https://pgsindia-ncof.gov.in",
+      "active": true,
+      "state": "national",
+      "translations": {
+        "en": {
+          "scheme_name": "Paramparagat Krishi Vikas Yojana (PKVY)",
+          "description": "Scheme for promotion of organic farming through cluster approach and Participatory Guarantee System.",
+          "benefits": "Financial assistance of ₹20,000 per hectare for organic farming inputs. Capacity building and training support.",
+          "application_process": "Apply through State Agriculture Department or PGS-India portal. Form clusters of 50 farmers minimum.",
+          "required_documents": "Land records, Organic farming plan, Cluster formation certificate",
+          "eligibility_details": "Farmers willing to adopt organic farming practices in clusters",
+          "timeline": "Approval within 30 days of application submission",
+          "support_contact": "Helpline: 1800-180-1551, Website: pgsindia-ncof.gov.in"
+        },
+        "hi": {
+          "scheme_name": "परंपरागत कृषि विकास योजना (पीकेवीवाई)",
+          "description": "क्लस्टर दृष्टिकोण और भागीदारी गारंटी प्रणाली के माध्यम से जैविक खेती को बढ़ावा देने की योजना।",
+          "benefits": "जैविक खेती इनपुट के लिए प्रति हेक्टेयर ₹20,000 की वित्तीय सहायता। क्षमता निर्माण और प्रशिक्षण सहायता।",
+          "application_process": "राज्य कृषि विभाग के माध्यम से या पीजीएस-इंडिया पोर्टल पर आवेदन करें। न्यूनतम 50 किसानों के क्लस्टर बनाएं।",
+          "required_documents": "भूमि रिकॉर्ड, जैविक खेती योजना, क्लस्टर निर्माण प्रमाण पत्र",
+          "eligibility_details": "क्लस्टर में जैविक खेती अपनाने के इच्छुक किसान",
+          "timeline": "आवेदन जमा करने के 30 दिनों के भीतर अनुमोदन",
+          "support_contact": "हेल्पलाइन: 1800-180-1551, वेबसाइट: pgsindia-ncof.gov.in"
+        },
+        "mr": {
+          "scheme_name": "परंपरागत कृषी विकास योजना (पीकेवीवाई)",
+          "description": "क्लस्टर दृष्टिकोण आणि सहभागी हमी प्रणालीद्वारे जैविक शेतीला प्रोत्साहन देणारी योजना.",
+          "benefits": "जैविक शेती इनपुटसाठी प्रति हेक्टर ₹20,000 ची आर्थिक सहाय्य. क्षमता निर्माण आणि प्रशिक्षण सहाय्य.",
+          "application_process": "राज्य कृषी विभागाद्वारे किंवा पीजीएस-इंडिया पोर्टलवर अर्ज करा. किमान 50 शेतकऱ्यांचे क्लस्टर तयार करा.",
+          "required_documents": "जमीन रेकॉर्ड, जैविक शेती योजना, क्लस्टर निर्मिती प्रमाणपत्र",
+          "eligibility_details": "क्लस्टरमध्ये जैविक शेती पद्धती स्वीकारण्यास इच्छुक शेतकरी",
+          "timeline": "अर्ज सादर करण्याच्या 30 दिवसांच्या आत मंजूरी",
+          "support_contact": "हेल्पलाइन: 1800-180-1551, वेबसाइट: pgsindia-ncof.gov.in"
+        },
+        "kn": {
+          "scheme_name": "ಪರಂಪರಾಗತ ಕೃಷಿ ವಿಕಾಸ ಯೋಜನೆ (ಪಿಕೆವಿವೈ)",
+          "description": "ಕ್ಲಸ್ಟರ್ ವಿಧಾನ ಮತ್ತು ಭಾಗವಹಿಸುವ ಗ್ಯಾರಂಟಿ ಸಿಸ್ಟಮ್ ಮೂಲಕ ಸಾವಯವ ಕೃಷಿಯನ್ನು ಪ್ರಚೋದಿಸುವ ಯೋಜನೆ.",
+          "benefits": "ಸಾವಯವ ಕೃಷಿ ಇನ್‌ಪುಟ್‌ಗಳಿಗೆ ಪ್ರತಿ ಹೆಕ್ಟೇರ್ ₹20,000 ಆರ್ಥಿಕ ನೆರವು. ಸಾಮರ್ಥ್ಯ ನಿರ್ಮಾಣ ಮತ್ತು ತರಬೇತಿ ಬೆಂಬಲ.",
+          "application_process": "ರಾಜ್ಯ ಕೃಷಿ ಇಲಾಖೆ ಮೂಲಕ ಅಥವಾ ಪಿಜಿಎಸ್-ಇಂಡಿಯಾ ಪೋರ್ಟಲ್‌ನಲ್ಲಿ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ. ಕನಿಷ್ಠ 50 ರೈತರ ಕ್ಲಸ್ಟರ್‌ಗಳನ್ನು ರಚಿಸಿ.",
+          "required_documents": "ಭೂಮಿ ದಾಖಲೆಗಳು, ಸಾವಯವ ಕೃಷಿ ಯೋಜನೆ, ಕ್ಲಸ್ಟರ್ ರಚನೆ ಪ್ರಮಾಣಪತ್ರ",
+          "eligibility_details": "ಕ್ಲಸ್ಟರ್‌ಗಳಲ್ಲಿ ಸಾವಯವ ಕೃಷಿ ಅಭ್ಯಾಸಗಳನ್ನು ಅನುಸರಿಸಲು ಇಚ್ಛಿಸುವ ರೈತರು",
+          "timeline": "ಅರ್ಜಿ ಸಲ್ಲಿಸುವುದರ 30 ದಿನಗಳಲ್ಲಿ ಅನುಮೋದನೆ",
+          "support_contact": "ಹೆಲ್ಪ್‌ಲೈನ್: 1800-180-1551, ವೆಬ್‌ಸೈಟ್: pgsindia-ncof.gov.in"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "scheme_type": "grant",
+      "eligibility": "Women farmers and entrepreneurs",
+      "amount_range": "Up to ₹3 lakh",
+      "installments": "One-time grant",
+      "contact_info": "011-23381351",
+      "website": "https://mahatma-gandhi-nregs.ap.gov.in",
+      "active": true,
+      "state": "national",
+      "translations": {
+        "en": {
+          "scheme_name": "Mahila Kisan Sashaktikaran Pariyojana (MKSP)",
+          "description": "Scheme for empowerment of women farmers through creation of sustainable livelihood opportunities.",
+          "benefits": "Financial assistance up to ₹3 lakh for women-led agricultural enterprises. Training and capacity building support.",
+          "application_process": "Apply through State Rural Livelihoods Mission or Agriculture Department. Submit detailed project proposal.",
+          "required_documents": "Project proposal, Identity proof, Bank account details, Group formation certificate",
+          "eligibility_details": "Women farmers and entrepreneurs aged 18-60 years",
+          "timeline": "Project approval within 45 days of application",
+          "support_contact": "Phone: 011-23381351, Email: mksp-mord@gov.in"
+        },
+        "hi": {
+          "scheme_name": "महिला किसान सशक्तिकरण परियोजना (एमकेएसपी)",
+          "description": "टिकाऊ आजीविका अवसरों के निर्माण के माध्यम से महिला किसानों को सशक्त बनाने की योजना।",
+          "benefits": "महिला नेतृत्व वाली कृषि उद्यमों के लिए ₹3 लाख तक वित्तीय सहायता। प्रशिक्षण और क्षमता निर्माण सहायता।",
+          "application_process": "राज्य ग्रामीण आजीविका मिशन या कृषि विभाग के माध्यम से आवेदन करें। विस्तृत परियोजना प्रस्ताव जमा करें।",
+          "required_documents": "परियोजना प्रस्ताव, पहचान प्रमाण, बैंक खाता विवरण, समूह निर्माण प्रमाण पत्र",
+          "eligibility_details": "18-60 वर्ष की आयु की महिला किसान और उद्यमी",
+          "timeline": "आवेदन के 45 दिनों के भीतर परियोजना अनुमोदन",
+          "support_contact": "फोन: 011-23381351, ईमेल: mksp-mord@gov.in"
+        },
+        "mr": {
+          "scheme_name": "महिला किसान सशक्तिकरण परियोजना (एमकेएसपी)",
+          "description": "शाश्वत उपजीविका संधी निर्माणाद्वारे महिला शेतकऱ्यांना सशक्त करण्याची योजना.",
+          "benefits": "महिला नेतृत्वाखालील कृषी उद्योगांसाठी ₹3 लाख पर्यंत आर्थिक सहाय्य. प्रशिक्षण आणि क्षमता निर्माण सहाय्य.",
+          "application_process": "राज्य ग्रामीण उपजीविका मिशन किंवा कृषी विभागाद्वारे अर्ज करा. तपशीलवार प्रकल्प प्रस्ताव सादर करा.",
+          "required_documents": "प्रकल्प प्रस्ताव, ओळख पुरावा, बँक खाते तपशील, गट निर्मिती प्रमाणपत्र",
+          "eligibility_details": "18-60 वर्षे वयोगटातील महिला शेतकरी आणि उद्योजक",
+          "timeline": "अर्जाच्या 45 दिवसांच्या आत प्रकल्प मान्यता",
+          "support_contact": "फोन: 011-23381351, ईमेल: mksp-mord@gov.in"
+        },
+        "kn": {
+          "scheme_name": "ಮಹಿಳಾ ಕಿಸಾನ್ ಸಶಕ್ತೀಕರಣ ಪರಿಯೋಜನೆ (ಎಂಕೆಎಸ್‌ಪಿ)",
+          "description": "ಸ್ಥಿರವಾದ ಜೀವನೋಪಾಯ ಅವಕಾಶಗಳ ಸೃಷ್ಟಿಯ ಮೂಲಕ ಮಹಿಳಾ ರೈತರನ್ನು ಸಶಕ್ತೀಕರಿಸುವ ಯೋಜನೆ.",
+          "benefits": "ಮಹಿಳಾ ನೇತೃತ್ವದ ಕೃಷಿ ಉದ್ಯಮಗಳಿಗೆ ₹3 ಲಕ್ಷದವರೆಗೆ ಆರ್ಥಿಕ ನೆರವು. ತರಬೇತಿ ಮತ್ತು ಸಾಮರ್ಥ್ಯ ನಿರ್ಮಾಣ ಬೆಂಬಲ.",
+          "application_process": "ರಾಜ್ಯ ಗ್ರಾಮೀಣ ಜೀವನೋಪಾಯ ಮಿಷನ್ ಅಥವಾ ಕೃಷಿ ಇಲಾಖೆ ಮೂಲಕ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ. ವಿವರವಾದ ಯೋಜನೆ ಪ್ರಸ್ತಾವನೆಯನ್ನು ಸಲ್ಲಿಸಿ.",
+          "required_documents": "ಯೋಜನೆ ಪ್ರಸ್ತಾವನೆ, ಗುರುತಿನ ಪುರಾವೆ, ಬ್ಯಾಂಕ್ ಖಾತೆ ವಿವರಗಳು, ಗುಂಪು ರಚನೆ ಪ್ರಮಾಣಪತ್ರ",
+          "eligibility_details": "18-60 ವರ್ಷ ವಯಸ್ಸಿನ ಮಹಿಳಾ ರೈತರು ಮತ್ತು ಉದ್ಯಮಿಗಳು",
+          "timeline": "ಅರ್ಜಿಯ 45 ದಿನಗಳಲ್ಲಿ ಯೋಜನೆ ಅನುಮೋದನೆ",
+          "support_contact": "ಫೋನ್: 011-23381351, ಇಮೇಲ್: mksp-mord@gov.in"
+        }
+      }
+    }
+  ]
+}

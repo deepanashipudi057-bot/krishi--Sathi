@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesticides & Fertilizers - Krishi Sathi</title>
+    <link rel="stylesheet" href="assets/css/category.css">
+    <link rel="stylesheet" href="assets/css/pesticides-modal.css">
+    <style>
+        /* Enhanced attractive presentation styles */
+        .page-hero {
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+            animation: float 20s infinite linear;
+        }
+        @keyframes float {
+            0% { transform: translateX(-100px); }
+            100% { transform: translateX(100px); }
+        }
+        .page-title {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease-out;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .page-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+        .data-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        .data-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        .card-header {
+            background: linear-gradient(135deg, #2196F3, #21CBF3);
+            color: white;
+            padding: 20px;
+            position: relative;
+        }
+        .card-ribbon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #FF5722;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        .product-type {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        .card-body {
+            padding: 25px;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        .usage-section, .precautions-section {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e8f5e8;
+            border-radius: 10px;
+            border-left: 5px solid #4CAF50;
+        }
+        .precautions-section {
+            background: #ffebee;
+            border-left-color: #f44336;
+        }
+        .voice-assistant-section {
+            text-align: center;
+            margin-top: 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 15px;
+            color: white;
+        }
+        .voice-btn {
+            background: #FF4081;
+            border: none;
+            border-radius: 50px;
+            width: 80px;
+            height: 80px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .voice-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(255,64,129,0.4);
+        }
+        .voice-btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255,255,255,0.3);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+        .voice-btn:active::before {
+            width: 120px;
+            height: 120px;
+        }
+        .pulse {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: rgba(255,64,129,0.3);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(1.5); opacity: 0; }
+        }
+        .voice-status {
+            margin-top: 20px;
+            font-size: 1.1rem;
+            min-height: 30px;
+        }
+        .language-indicator {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(0,0,0,0.8);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            z-index: 1000;
+        }
+        .tab-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        .tab-btn {
+            background: #f0f0f0;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        .tab-btn.active, .tab-btn:hover {
+            background: #4CAF50;
+            color: white;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div id="languageIndicator" class="language-indicator">Language: English</div>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">🌾 Krishi Sathi</a>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="weather.html">Weather</a></li>
+                    <li><a href="seeds-crops.html">Seeds & Crops</a></li>
+                    <li><a href="pesticides.html" class="active">Pesticides</a></li>
+                    <li><a href="schemes.html">Schemes</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <select id="languageSelect" onchange="changeLanguage()">
+                    <option value="en">English</option>
+                    <option value="hi">हिन्दी</option>
+                    <option value="mr">मराठी</option>
+                    <option value="kn">ಕನ್ನಡ</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="page-hero pesticides-hero">
+            <div class="container">
+                <h1 class="page-title">🧪 <span data-translate="pesticides-title">Pesticides & Fertilizers</span></h1>
+                <p class="page-subtitle" data-translate="pesticides-subtitle">Safe and effective crop protection solutions</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="filter-bar">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" onclick="filterByType('all')">All Products</button>
+                        <button class="tab-btn" onclick="filterByType('pesticide')">Pesticides</button>
+                        <button class="tab-btn" onclick="filterByType('fertilizer')">Fertilizers</button>
+                        <button class="tab-btn" onclick="filterByType('organic')">Organic</button>
+                    </div>
+                </div>
+
+                <div id="pesticidesData" class="data-grid">
+                    <!-- Cards will be generated dynamically -->
+                </div>
+
+                <div class="emergency-contact">
+                    <h3>🚨 <span data-translate="emergency-helpline">Emergency Helpline</span></h3>
+                    <p data-translate="emergency-desc">For pesticide poisoning or emergencies</p>: <strong>1800-123-4567</strong>
+                </div>
+
+                <div class="voice-assistant-section">
+                    <h3>🎤 <span data-translate="voice-assistant-title">Voice Assistant</span></h3>
+                    <p data-translate="voice-assistant-desc">Ask questions in Hindi, Kannada, Marathi, or English</p>
+                    <button id="voiceButton" class="voice-btn">
+                        <span class="pulse"></span>
+                        <span class="mic-icon">🎤</span>
+                    </button>
+                    <div id="voiceStatus" class="voice-status" data-translate="voice-status-start">Click to start voice interaction</div>
+                    <div id="voiceTextOutput" class="voice-text-output" style="margin-top: 20px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 10px; min-height: 50px;"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Krishi Sathi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- OpenAI and LiveKit scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/openai@4.0.0/dist/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/livekit-client@1.15.0/dist/livekit-client.umd.js"></script>
+
+    <script src="assets/js/language-switcher.js"></script>
+    <script src="assets/js/voice-assistant.js"></script>
+    <script src="assets/js/pesticides.js"></script>
+</body>
+</html>

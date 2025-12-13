@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seeds & Crops - Krishi Sathi</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/category.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/seeds-crops.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">🌾 Krishi Sathi</a>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="weather.html">Weather</a></li>
+                    <li><a href="seeds-crops.html" class="active">Seeds & Crops</a></li>
+                    <li><a href="pesticides.html">Pesticides</a></li>
+                    <li><a href="schemes.html">Schemes</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <select id="languageSelect" onchange="changeLanguage()">
+                    <option value="en">English</option>
+                    <option value="hi">हिन्दी</option>
+                    <option value="mr">मराठी</option>
+                    <option value="kn">ಕನ್ನಡ</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="page-hero seeds-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="page-title animate-fade-in">
+                            <span class="hero-icon">🌱</span>
+                            <span data-translate="seeds-title">Seeds & Crops Information</span>
+                        </h1>
+                        <p class="page-subtitle animate-slide-up" data-translate="seeds-subtitle">
+                            Complete guide to seeds, planting, and crop management for sustainable farming
+                        </p>
+                        <div class="hero-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">🌾</span>
+                                <span>Crop Information</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">📅</span>
+                                <span>Seasonal Guide</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">💡</span>
+                                <span>Farming Tips</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🎤</span>
+                                <span>Voice Assistant</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="floating-elements">
+                            <div class="floating-icon icon-1">🌽</div>
+                            <div class="floating-icon icon-2">🍅</div>
+                            <div class="floating-icon icon-3">🌻</div>
+                            <div class="floating-icon icon-4">🥕</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item animate-fade-in" style="animation-delay: 0.2s">
+                        <div class="stat-icon">🌾</div>
+                        <span class="stat-number" id="totalCrops">0</span>
+                        <span class="stat-label" data-translate="total-crops">Total Crops</span>
+                    </div>
+                    <div class="stat-item animate-fade-in" style="animation-delay: 0.4s">
+                        <div class="stat-icon">🌧️</div>
+                        <span class="stat-number" id="kharifCount">0</span>
+                        <span class="stat-label" data-translate="kharif-crops">Kharif Crops</span>
+                    </div>
+                    <div class="stat-item animate-fade-in" style="animation-delay: 0.6s">
+                        <div class="stat-icon">❄️</div>
+                        <span class="stat-number" id="rabiCount">0</span>
+                        <span class="stat-label" data-translate="rabi-crops">Rabi Crops</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <!-- Filter Tabs -->
+                <div class="tab-container">
+                    <button class="tab-btn active" onclick="filterBySeason('all')">All Seasons</button>
+                    <button class="tab-btn" onclick="filterBySeason('kharif')">Kharif</button>
+                    <button class="tab-btn" onclick="filterBySeason('rabi')">Rabi</button>
+                    <button class="tab-btn" onclick="filterBySeason('zaid')">Zaid</button>
+                </div>
+
+                <!-- Loading Spinner -->
+                <div id="loadingSpinner" class="loading-spinner">
+                    <div class="spinner"></div>
+                    <p>Loading seeds & crops data...</p>
+                </div>
+
+                <!-- Error Message -->
+                <div id="errorMessage" class="error-message" style="display: none;">
+                    <h3>⚠️ Error Loading Data</h3>
+                    <p>Please check your internet connection and try again.</p>
+                    <button onclick="loadCropsData()" class="btn btn-primary">Retry</button>
+                </div>
+
+                <!-- No Data Message -->
+                <div id="noDataMessage" class="no-data-message" style="display: none;">
+                    <h3>📭 No Data Found</h3>
+                    <p>No crops match your current filters. Try adjusting your search criteria.</p>
+                </div>
+
+                <!-- Crops Data Grid -->
+                <div id="seedsCropsData" class="data-grid">
+                    <!-- Cards will be generated dynamically -->
+                </div>
+
+                <!-- Crop Details Modal -->
+                <div id="cropModal" class="modal" style="display: none;">
+                    <div class="modal-content">
+                        <span class="close-modal" onclick="closeModal()">&times;</span>
+                        <div id="cropDetails" class="crop-details">
+                            <!-- Modal content will be populated dynamically -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Voice Assistant Section -->
+                <div class="voice-assistant-section">
+                    <div class="voice-container">
+                        <button id="voiceButton" class="voice-btn">
+                            <span class="pulse"></span>
+                            <span class="mic-icon">🎤</span>
+                            <span data-translate="voice-btn-text">Ask about Seeds & Crops</span>
+                        </button>
+                        <div id="voiceStatus" class="voice-status" data-translate="voice-status-ready">Voice assistant ready</div>
+                        <div id="voiceTextOutput" class="voice-text-output" style="display: none;"></div>
+                        <div id="languageIndicator" class="language-indicator">Language: English</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Krishi Sathi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/language-switcher.js"></script>
+    <script src="assets/js/voice-assistant.js"></script>
+    <script src="assets/js/seeds-crops.js"></script>
+</body>
+</html>

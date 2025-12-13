@@ -1,0 +1,144 @@
+{
+  "seeds_crops": [
+    {
+      "id": 1,
+      "crop_type": "cereals",
+      "season": "kharif",
+      "duration": "120-150 days",
+      "yield_per_acre": "25-30 quintals",
+      "water_requirement": "high",
+      "soil_type": "clay_loam",
+      "translations": {
+        "en": {
+          "crop_name": "Rice (Paddy)",
+          "description": "Rice is a staple cereal crop that requires well-leveled fields with proper water management. It thrives in warm, humid climates.",
+          "planting_method": "Transplanting: Prepare seedbed 30 days before transplanting. Maintain 2-3 inches of water level. Plant spacing: 20cm x 15cm.",
+          "care_instructions": "Regular weeding required. Apply nitrogen fertilizers in split doses. Monitor for pests like stem borers and leaf folders. Drain water 10-15 days before harvest."
+        },
+        "hi": {
+          "crop_name": "धान (चावल)",
+          "description": "धान एक प्रमुख अनाज फसल है जिसे उचित जल प्रबंधन के साथ अच्छी तरह से समतल खेतों की आवश्यकता होती है। यह गर्म, आर्द्र जलवायु में पनपता है।",
+          "planting_method": "प्रत्यारोपण: प्रत्यारोपण से 30 दिन पहले बीज की क्यारी तैयार करें। 2-3 इंच पानी का स्तर बनाए रखें। पौधे की दूरी: 20 सेमी x 15 सेमी।",
+          "care_instructions": "नियमित निराई आवश्यक है। विभाजित खुराक में नाइट्रोजन उर्वरक लगाएं। तना छेदक और पत्ती मोड़क जैसे कीटों की निगरानी करें। कटाई से 10-15 दिन पहले पानी निकालें।"
+        },
+        "mr": {
+          "crop_name": "तांदूळ (भात)",
+          "description": "तांदूळ हे एक प्रमुख धान्य पीक आहे ज्यासाठी योग्य पाणी व्यवस्थापनासह चांगल्या प्रकारे समतल शेते आवश्यक असतात. हे उष्ण, आर्द्र हवामानात वाढते.",
+          "planting_method": "प्रत्यारोपण: प्रत्यारोपणाच्या 30 दिवस आधी बियाणे पलंग तयार करा. 2-3 इंच पाण्याची पातळी राखा. रोपांचे अंतर: 20 सेमी x 15 सेमी.",
+          "care_instructions": "नियमित तण काढणे आवश्यक. विभाजित डोसमध्ये नायट्रोजन खते घाला. स्टेम बोअरर आणि लीफ फोल्डर यांसारख्या कीटकांचे निरीक्षण करा. कापणीच्या 10-15 दिवस आधी पाणी काढा."
+        },
+        "kn": {
+          "crop_name": "ಅಕ್ಕಿ (ಭತ್ತ)",
+          "description": "ಅಕ್ಕಿ ಒಂದು ಪ್ರಮುಖ ಧಾನ್ಯ ಬೆಳೆಯಾಗಿದ್ದು, ಸರಿಯಾದ ನೀರು ನಿರ್ವಹಣೆಯೊಂದಿಗೆ ಚೆನ್ನಾಗಿ ನೆಲಸಮವಾದ ಹೊಲಗಳ ಅಗತ್ಯವಿರುತ್ತದೆ. ಇದು ಬೆಚ್ಚಗಿನ, ತೇವಾಂಶವುಳ್ಳ ವಾತಾವರಣದಲ್ಲಿ ಬೆಳೆಯುತ್ತದೆ.",
+          "planting_method": "ಕಸಿ ಮಾಡುವುದು: ಕಸಿ ಮಾಡುವ 30 ದಿನಗಳ ಮೊದಲು ಬೀಜದ ತೊಟ್ಟಿಯನ್ನು ತಯಾರಿಸಿ. 2-3 ಇಂಚು ನೀರಿನ ಮಟ್ಟವನ್ನು ನಿರ್ವಹಿಸಿ. ಸಸಿ ಅಂತರ: 20 ಸೆಂ.ಮೀ x 15 ಸೆಂ.ಮೀ.",
+          "care_instructions": "ನಿಯಮಿತ ಕಳೆ ತೆಗೆಯುವುದು ಅವಶ್ಯಕ. ವಿಭಜಿತ ಪ್ರಮಾಣದಲ್ಲಿ ಸಾರಜನಕ ರಸಗೊಬ್ಬರಗಳನ್ನು ಅನ್ವಯಿಸಿ. ಕಾಂಡ ಕೊರೆಯುವ ಹುಳುಗಳು ಮತ್ತು ಎಲೆ ಮಡಚುವವುಗಳಂತಹ ಕೀಟಗಳನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಿ. ಕೊಯ್ಲುಗೆ 10-15 ದಿನಗಳ ಮೊದಲು ನೀರನ್ನು ಬರಿದುಮಾಡಿ."
+        }
+      }
+    },
+    {
+      "id": 2,
+      "crop_type": "pulses",
+      "season": "rabi",
+      "duration": "90-110 days",
+      "yield_per_acre": "8-12 quintals",
+      "water_requirement": "medium",
+      "soil_type": "loamy",
+      "translations": {
+        "en": {
+          "crop_name": "Chickpea (Gram)",
+          "description": "Chickpea is an important pulse crop rich in protein. It is drought-resistant and improves soil fertility through nitrogen fixation.",
+          "planting_method": "Direct sowing: Sow seeds at 30cm row spacing and 10cm plant spacing. Seed depth: 5-7cm. Seed rate: 25-30 kg per acre.",
+          "care_instructions": "One or two irrigations at critical stages. Earthing up after 30-35 days. Protect from pod borer. Harvest when 80% pods turn brown."
+        },
+        "hi": {
+          "crop_name": "चना (काबुली चना)",
+          "description": "चना प्रोटीन से भरपूर एक महत्वपूर्ण दलहन फसल है। यह सूखा प्रतिरोधी है और नाइट्रोजन स्थिरीकरण के माध्यम से मिट्टी की उर्वरता में सुधार करता है।",
+          "planting_method": "सीधी बुवाई: 30 सेमी पंक्ति की दूरी और 10 सेमी पौधे की दूरी पर बीज बोएं। बीज की गहराई: 5-7 सेमी। बीज दर: 25-30 किलो प्रति एकड़।",
+          "care_instructions": "महत्वपूर्ण चरणों में एक या दो सिंचाई। 30-35 दिनों के बाद मिट्टी चढ़ाना। फली छेदक से सुरक्षा। जब 80% फलियां भूरी हो जाएं तो कटाई करें।"
+        },
+        "mr": {
+          "crop_name": "हरभरा (चणे)",
+          "description": "हरभरा हे प्रथिनांनी समृद्ध एक महत्त्वाचे कडधान्य पीक आहे. हे दुष्काळ प्रतिरोधक आहे आणि नायट्रोजन स्थिरीकरणाद्वारे मातीची सुपीकता सुधारते.",
+          "planting_method": "थेट पेरणी: 30 सेमी ओळीचे अंतर आणि 10 सेमी रोपांचे अंतर ठेवून बिया पेरा. बियाणे खोली: 5-7 सेमी. बियाणे दर: 25-30 किलो प्रति एकर.",
+          "care_instructions": "गंभीर टप्प्यांवर एक किंवा दोन पाणी पुरवठा. 30-35 दिवसांनंतर मातीचा उंच भराव. शेंगा पोखरणाऱ्या किड्यांपासून संरक्षण. 80% शेंगा तपकिरी झाल्यावर कापणी करा."
+        },
+        "kn": {
+          "crop_name": "ಕಡಲೆ (ಚಣಾ)",
+          "description": "ಕಡಲೆ ಪ್ರೋಟೀನ್‌ನಿಂದ ಸಮೃದ್ಧವಾದ ಪ್ರಮುಖ ದ್ವಿದಳ ಧಾನ್ಯ ಬೆಳೆಯಾಗಿದೆ. ಇದು ಬರ-ನಿರೋಧಕವಾಗಿದೆ ಮತ್ತು ಸಾರಜನಕ ಸ್ಥಿರೀಕರಣದ ಮೂಲಕ ಮಣ್ಣಿನ ಫಲವತ್ತತೆಯನ್ನು ಸುಧಾರಿಸುತ್ತದೆ.",
+          "planting_method": "ನೇರ ಬಿತ್ತನೆ: 30 ಸೆಂ.ಮೀ ಸಾಲು ಅಂತರ ಮತ್ತು 10 ಸೆಂ.ಮೀ ಸಸಿ ಅಂತರದಲ್ಲಿ ಬೀಜಗಳನ್ನು ಬಿತ್ತಿರಿ. ಬೀಜದ ಆಳ: 5-7 ಸೆಂ.ಮೀ. ಬೀಜ ದರ: ಪ್ರತಿ ಎಕರೆಗೆ 25-30 ಕೆ.ಜಿ.",
+          "care_instructions": "ನಿರ್ಣಾಯಕ ಹಂತಗಳಲ್ಲಿ ಒಂದು ಅಥವಾ ಎರಡು ನೀರಾವರಿ. 30-35 ದಿನಗಳ ನಂತರ ಮಣ್ಣು ಹಾಕುವುದು. ಬೀಜಕೋಶ ಕೊರೆಯುವ ಹುಳುಗಳಿಂದ ರಕ್ಷಿಸಿ. 80% ಬೀಜಕೋಶಗಳು ಕಂದು ಬಣ್ಣಕ್ಕೆ ತಿರುಗಿದಾಗ ಕೊಯ್ಲು ಮಾಡಿ."
+        }
+      }
+    },
+    {
+      "id": 3,
+      "crop_type": "vegetables",
+      "season": "all_year",
+      "duration": "60-80 days",
+      "yield_per_acre": "80-100 quintals",
+      "water_requirement": "high",
+      "soil_type": "sandy_loam",
+      "translations": {
+        "en": {
+          "crop_name": "Tomato",
+          "description": "Tomato is a highly nutritious vegetable crop rich in vitamins and antioxidants. It requires well-drained soil and regular care.",
+          "planting_method": "Transplanting: Raise seedlings in nursery for 25-30 days. Transplant at 60cm x 45cm spacing. Add organic manure before planting.",
+          "care_instructions": "Stake or cage plants for support. Water regularly but avoid waterlogging. Prune suckers for better yield. Protect from fruit borers and early blight."
+        },
+        "hi": {
+          "crop_name": "टमाटर",
+          "description": "टमाटर विटामिन और एंटीऑक्सिडेंट से भरपूर एक अत्यधिक पौष्टिक सब्जी फसल है। इसे अच्छी जल निकासी वाली मिट्टी और नियमित देखभाल की आवश्यकता होती है।",
+          "planting_method": "प्रत्यारोपण: नर्सरी में 25-30 दिनों के लिए पौध तैयार करें। 60 सेमी x 45 सेमी की दूरी पर प्रत्यारोपण करें। रोपण से पहले जैविक खाद डालें।",
+          "care_instructions": "सहारे के लिए पौधों को खूंटे या पिंजरे से बांधें। नियमित रूप से पानी दें लेकिन जलभराव से बचें। बेहतर उपज के लिए शाखाओं की कटाई-छंटाई करें। फल छेदक और अगेती झुलसा रोग से बचाएं।"
+        },
+        "mr": {
+          "crop_name": "टोमॅटो",
+          "description": "टोमॅटो हे जीवनसत्त्वे आणि अँटिऑक्सिडंट्सने समृद्ध अत्यंत पौष्टिक भाजीपाला पीक आहे. यास चांगला निचरा होणारी माती आणि नियमित देखभाल आवश्यक आहे.",
+          "planting_method": "प्रत्यारोपण: रोपवाटिकेत 25-30 दिवसांसाठी रोपे तयार करा. 60 सेमी x 45 सेमी अंतरावर प्रत्यारोपण करा. लागवडीपूर्वी सेंद्रिय खत घाला.",
+          "care_instructions": "आधारासाठी रोपे खांबावर किंवा पिंजऱ्यात लावा. नियमितपणे पाणी द्या परंतु पाणी साचू देऊ नका. चांगल्या उत्पादनासाठी फांद्या छाटा. फळांच्या पोखरणाऱ्या किड्या आणि अर्ली ब्लाइटपासून संरक्षण करा."
+        },
+        "kn": {
+          "crop_name": "ಟೊಮೇಟೊ",
+          "description": "ಟೊಮೇಟೊ ವಿಟಾಮಿನ್‌ಗಳು ಮತ್ತು ಉತ್ಕರ್ಷಣ ನಿರೋಧಕಗಳಿಂದ ಸಮೃದ್ಧವಾದ ಅತ್ಯಂತ ಪೌಷ್ಟಿಕ ತರಕಾರಿ ಬೆಳೆಯಾಗಿದೆ. ಇದಕ್ಕೆ ಉತ್ತಮ ಒಳಚರಂಡಿ ಹೊಂದಿರುವ ಮಣ್ಣು ಮತ್ತು ನಿಯಮಿತ ಆರೈಕೆ ಅಗತ್ಯವಿದೆ.",
+          "planting_method": "ಕಸಿ ಮಾಡುವುದು: ನರ್ಸರಿಯಲ್ಲಿ 25-30 ದಿನಗಳವರೆಗೆ ಮೊಳಕೆಗಳನ್ನು ಬೆಳೆಯಿರಿ. 60 ಸೆಂ.ಮೀ x 45 ಸೆಂ.ಮೀ ಅಂತರದಲ್ಲಿ ಕಸಿ ಮಾಡಿ. ನೆಡುವ ಮೊದಲು ಸಾವಯವ ಗೊಬ್ಬರವನ್ನು ಸೇರಿಸಿ.",
+          "care_instructions": "ಬೆಂಬಲಕ್ಕಾಗಿ ಗಿಡಗಳನ್ನು ಕಂಬಕ್ಕೆ ಅಥವಾ ಪಂಜರಕ್ಕೆ ಕಟ್ಟಿ. ನಿಯಮಿತವಾಗಿ ನೀರು ಹಾಕಿ ಆದರೆ ನೀರು ನಿಂತಿರುವುದನ್ನು ತಪ್ಪಿಸಿ. ಉತ್ತಮ ಇಳುವರಿಗಾಗಿ ಪಾರ್ಶ್ವ ಚಿಗುರುಗಳನ್ನು ಕತ್ತರಿಸಿ. ಹಣ್ಣಿನ ಕೊರೆಯುವ ಹುಳುಗಳು ಮತ್ತು ಮುಂಚಿನ ರೋಗದಿಂದ ರಕ್ಷಿಸಿ."
+        }
+      }
+    },
+    {
+      "id": 4,
+      "crop_type": "cash_crops",
+      "season": "kharif",
+      "duration": "150-180 days",
+      "yield_per_acre": "15-20 quintals",
+      "water_requirement": "medium",
+      "soil_type": "black_soil",
+      "translations": {
+        "en": {
+          "crop_name": "Cotton",
+          "description": "Cotton is a major fiber crop grown for its lint and seed. It requires warm weather and moderate rainfall for optimal growth.",
+          "planting_method": "Direct sowing: Sow seeds at 90cm row spacing and 60cm plant spacing. Seed depth: 3-5cm. Treat seeds with fungicide before sowing.",
+          "care_instructions": "Thinning after 15-20 days. Regular weeding essential. Apply fertilizers in split doses. Monitor for bollworms, whiteflies, and aphids. Pick cotton when bolls open fully."
+        },
+        "hi": {
+          "crop_name": "कपास",
+          "description": "कपास एक प्रमुख रेशा फसल है जो इसकी रुई और बीज के लिए उगाई जाती है। इसे इष्टतम वृद्धि के लिए गर्म मौसम और मध्यम वर्षा की आवश्यकता होती है।",
+          "planting_method": "सीधी बुवाई: 90 सेमी पंक्ति की दूरी और 60 सेमी पौधे की दूरी पर बीज बोएं। बीज की गहराई: 3-5 सेमी। बुवाई से पहले बीज को फफूंदनाशक से उपचारित करें।",
+          "care_instructions": "15-20 दिनों के बाद पौधों को छांटें। नियमित निराई आवश्यक। विभाजित खुराक में उर्वरक डालें। गुलाबी सुंडी, सफेद मक्खी और एफिड की निगरानी करें। जब टिंडे पूरी तरह से खुल जाएं तो कपास तोड़ें।"
+        },
+        "mr": {
+          "crop_name": "कापूस",
+          "description": "कापूस हे त्याच्या कापसासाठी आणि बियाणांसाठी घेतले जाणारे एक प्रमुख तंतू पीक आहे. याला इष्टतम वाढीसाठी उबदार हवामान आणि मध्यम पाऊस आवश्यक असतो.",
+          "planting_method": "थेट पेरणी: 90 सेमी ओळीचे अंतर आणि 60 सेमी रोपांचे अंतर ठेवून बिया पेरा. बियाणे खोली: 3-5 सेमी. पेरणीपूर्वी बियाण्यांवर बुरशीनाशकाने उपचार करा.",
+          "care_instructions": "15-20 दिवसांनंतर पातळ करा. नियमित तण काढणे आवश्यक. विभाजित डोसमध्ये खते घाला. बोंडअळी, पांढरी माशी आणि मुंग्यांचे निरीक्षण करा. बोंडे पूर्णपणे उघडल्यावर कापूस गोळा करा."
+        },
+        "kn": {
+          "crop_name": "ಹತ್ತಿ",
+          "description": "ಹತ್ತಿ ಅದರ ರೇಷ್ಮೆ ಮತ್ತು ಬೀಜಕ್ಕಾಗಿ ಬೆಳೆಯುವ ಪ್ರಮುಖ ನಾರು ಬೆಳೆಯಾಗಿದೆ. ಇದಕ್ಕೆ ಅತ್ಯುತ್ತಮ ಬೆಳವಣಿಗೆಗಾಗಿ ಬೆಚ್ಚಗಿನ ಹವಾಮಾನ ಮತ್ತು ಮಧ್ಯಮ ಮಳೆಯ ಅಗತ್ಯವಿದೆ.",
+          "planting_method": "ನೇರ ಬಿತ್ತನೆ: 90 ಸೆಂ.ಮೀ ಸಾಲು ಅಂತರ ಮತ್ತು 60 ಸೆಂ.ಮೀ ಸಸಿ ಅಂತರದಲ್ಲಿ ಬೀಜಗಳನ್ನು ಬಿತ್ತಿರಿ. ಬೀಜದ ಆಳ: 3-5 ಸೆಂ.ಮೀ. ಬಿತ್ತನೆ ಮಾಡುವ ಮೊದಲು ಬೀಜಗಳನ್ನು ಶಿಲೀಂಧ್ರನಾಶಕದಿಂದ ಸಂಸ್ಕರಿಸಿ.",
+          "care_instructions": "15-20 ದಿನಗಳ ನಂತರ ತೆಳುಗೊಳಿಸುವುದು. ನಿಯಮಿತ ಕಳೆ ತೆಗೆಯುವುದು ಅತ್ಯಗತ್ಯ. ವಿಭಜಿತ ಪ್ರಮಾಣದಲ್ಲಿ ರಸಗೊಬ್ಬರಗಳನ್ನು ಅನ್ವಯಿಸಿ. ಬೊಲ್‌ವರ್ಮ್‌ಗಳು, ಬಿಳಿ ನೊಣಗಳು ಮತ್ತು ಗಿಡಹೇನುಗಳನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಿ. ಬೀಜಕೋಶಗಳು ಸಂಪೂರ್ಣವಾಗಿ ತೆರೆದಾಗ ಹತ್ತಿಯನ್ನು ಆರಿಸಿ."
+        }
+      }
+    }
+  ]
+}

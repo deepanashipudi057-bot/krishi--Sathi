@@ -1,0 +1,1357 @@
+/*
+========================================
+RESPONSIVE.CSS - Krishi Sathi Application
+Responsive design styles for all devices
+========================================
+*/
+
+/* ============================================
+   TABLE OF CONTENTS
+   ============================================
+   1. CSS Variables for Breakpoints
+   2. Base Responsive Utilities
+   3. Large Desktop (1400px+)
+   4. Desktop (1200px - 1399px)
+   5. Laptop (992px - 1199px)
+   6. Tablet (768px - 991px)
+   7. Mobile Landscape (576px - 767px)
+   8. Mobile Portrait (320px - 575px)
+   9. Component-Specific Responsiveness
+   10. Print Styles
+   ============================================ */
+
+
+/* ============================================
+   1. CSS Variables for Breakpoints
+   ============================================ */
+:root {
+    --breakpoint-xs: 320px;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-xxl: 1400px;
+}
+
+
+/* ============================================
+   2. Base Responsive Utilities
+   ============================================ */
+
+/* Responsive Container */
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive Videos */
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Hide/Show Elements by Screen Size */
+.hide-mobile {
+    display: block;
+}
+
+.show-mobile {
+    display: none;
+}
+
+.hide-tablet {
+    display: block;
+}
+
+.show-tablet {
+    display: none;
+}
+
+.hide-desktop {
+    display: none;
+}
+
+.show-desktop {
+    display: block;
+}
+
+
+/* ============================================
+   3. Large Desktop (1400px+)
+   ============================================ */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    
+    /* Hero Section */
+    .hero,
+    .page-hero {
+        padding: 80px 0;
+    }
+    
+    .page-title {
+        font-size: 56px;
+    }
+    
+    .page-subtitle {
+        font-size: 22px;
+    }
+    
+    /* Data Grid */
+    .data-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    /* Categories Grid */
+    .categories-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+}
+
+
+/* ============================================
+   4. Desktop (1200px - 1399px)
+   ============================================ */
+@media (max-width: 1399px) and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    
+    /* Navigation */
+    .nav-list {
+        gap: 15px;
+    }
+    
+    .nav-link {
+        padding: 10px 12px;
+        font-size: 15px;
+    }
+    
+    /* Data Grid */
+    .data-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    
+    /* Footer */
+    .footer-top {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+}
+
+
+/* ============================================
+   5. Laptop (992px - 1199px)
+   ============================================ */
+@media (max-width: 1199px) and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+        padding: 0 20px;
+    }
+    
+    /* Typography */
+    .page-title {
+        font-size: 42px;
+    }
+    
+    .page-subtitle {
+        font-size: 18px;
+    }
+    
+    h2 {
+        font-size: 32px;
+    }
+    
+    h3 {
+        font-size: 24px;
+    }
+    
+    /* Navigation */
+    .nav-text {
+        display: none;
+    }
+    
+    .nav-link {
+        padding: 10px;
+    }
+    
+    .nav-icon {
+        font-size: 20px;
+    }
+    
+    /* Data Grid */
+    .data-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .schemes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Weather Card */
+    .weather-main {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .temperature {
+        font-size: 42px;
+    }
+    
+    /* Footer */
+    .footer-top {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    .footer-stats {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+    
+    /* Voice Button */
+    .header-voice-btn .voice-text {
+        display: none;
+    }
+    
+    .voice-btn {
+        padding: 18px 35px;
+        font-size: 16px;
+    }
+}
+
+
+/* ============================================
+   6. Tablet (768px - 991px)
+   ============================================ */
+@media (max-width: 991px) and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+        padding: 0 20px;
+    }
+    
+    /* Hide/Show Elements */
+    .hide-tablet {
+        display: none !important;
+    }
+    
+    .show-tablet {
+        display: block !important;
+    }
+    
+    /* Typography */
+    .page-title {
+        font-size: 36px;
+    }
+    
+    .page-subtitle {
+        font-size: 16px;
+    }
+    
+    h1 {
+        font-size: 32px;
+    }
+    
+    h2 {
+        font-size: 28px;
+    }
+    
+    h3 {
+        font-size: 22px;
+    }
+    
+    h4 {
+        font-size: 18px;
+    }
+    
+    /* Header */
+    .header .container {
+        flex-wrap: wrap;
+    }
+    
+    .logo-name {
+        font-size: 22px;
+    }
+    
+    .logo-subtitle {
+        font-size: 13px;
+    }
+    
+    /* Navigation - Mobile Menu */
+    .mobile-menu-toggle {
+        display: flex;
+        order: 3;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 280px;
+        height: 100vh;
+        background: white;
+        padding: 80px 20px 20px;
+        transition: left 0.3s ease;
+        z-index: 999;
+        overflow-y: auto;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        order: 4;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav-link {
+        width: 100%;
+        padding: 15px;
+        justify-content: flex-start;
+    }
+    
+    .nav-text {
+        display: inline;
+    }
+    
+    .nav-icon {
+        font-size: 20px;
+    }
+    
+    /* Language Selector */
+    .language-selector-wrapper {
+        order: 2;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+    
+    .language-select {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    
+    /* Hero Section */
+    .hero,
+    .page-hero {
+        padding: 50px 0;
+    }
+    
+    /* Categories Grid */
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .category-card {
+        padding: 25px;
+    }
+    
+    .icon {
+        font-size: 50px;
+    }
+    
+    /* Data Grid */
+    .data-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .schemes-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Weather Card */
+    .weather-details {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    
+    .temperature {
+        font-size: 38px;
+    }
+    
+    .weather-icon {
+        font-size: 50px;
+    }
+    
+    /* Filter Bar */
+    .filter-bar {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .filter-bar select,
+    .filter-bar input {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    .search-box {
+        width: 100%;
+    }
+    
+    .tab-buttons {
+        width: 100%;
+    }
+    
+    .tab-btn {
+        flex: 1;
+        min-width: auto;
+    }
+    
+    /* Scheme Actions */
+    .scheme-actions {
+        flex-direction: column;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+    }
+    
+    /* Voice Button */
+    .voice-btn {
+        padding: 16px 30px;
+        font-size: 16px;
+    }
+    
+    .mic-icon {
+        font-size: 22px;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 50px 0 0;
+    }
+    
+    .footer-top {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    .footer-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .stat-number {
+        font-size: 32px;
+    }
+    
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    /* Tables */
+    .data-table {
+        font-size: 14px;
+    }
+    
+    .data-table th,
+    .data-table td {
+        padding: 10px;
+    }
+    
+    /* Cards */
+    .card-body {
+        padding: 18px;
+    }
+    
+    .card-header {
+        padding: 18px;
+    }
+}
+
+
+/* ============================================
+   7. Mobile Landscape (576px - 767px)
+   ============================================ */
+@media (max-width: 767px) and (min-width: 576px) {
+    .container {
+        max-width: 540px;
+        padding: 0 15px;
+    }
+    
+    /* Typography */
+    .page-title {
+        font-size: 32px;
+    }
+    
+    .page-subtitle {
+        font-size: 15px;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+    
+    /* Header */
+    .header .container {
+        padding: 12px 15px;
+    }
+    
+    .logo-icon {
+        font-size: 32px;
+    }
+    
+    .logo-name {
+        font-size: 20px;
+    }
+    
+    .logo-subtitle {
+        font-size: 12px;
+    }
+    
+    /* Categories Grid */
+    .categories-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    /* Data Cards */
+    .data-card {
+        margin-bottom: 15px;
+    }
+    
+    /* Weather Details */
+    .weather-details {
+        grid-template-columns: 1fr;
+    }
+    
+    .detail-item {
+        padding: 10px;
+    }
+    
+    /* Info Grid */
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    /* Footer */
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .footer-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Forms */
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+}
+
+
+/* ============================================
+   8. Mobile Portrait (320px - 575px)
+   ============================================ */
+@media (max-width: 575px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* Hide/Show Elements */
+    .hide-mobile {
+        display: none !important;
+    }
+    
+    .show-mobile {
+        display: block !important;
+    }
+    
+    /* Typography */
+    .page-title {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+    
+    .page-subtitle {
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 26px;
+    }
+    
+    h2 {
+        font-size: 22px;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+    
+    h4 {
+        font-size: 16px;
+    }
+    
+    p {
+        font-size: 15px;
+    }
+    
+    /* Header */
+    .header .container {
+        padding: 10px 15px;
+    }
+    
+    .logo-icon {
+        font-size: 28px;
+    }
+    
+    .logo-name {
+        font-size: 18px;
+    }
+    
+    .logo-subtitle {
+        display: none;
+    }
+    
+    .language-select {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+    
+    .header-voice-btn {
+        padding: 8px 12px;
+        font-size: 13px;
+        margin-left: 8px;
+    }
+    
+    .header-voice-btn .voice-text {
+        display: none;
+    }
+    
+    /* Navigation Menu */
+    .nav-menu {
+        width: 100%;
+        left: -100%;
+    }
+    
+    .nav-link {
+        padding: 12px 15px;
+        font-size: 15px;
+    }
+    
+    /* Hero Section */
+    .hero,
+    .page-hero {
+        padding: 40px 0;
+    }
+    
+    /* Categories Grid */
+    .categories-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .category-card {
+        padding: 20px;
+    }
+    
+    .category-card h3 {
+        font-size: 18px;
+    }
+    
+    .icon {
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+    
+    /* Data Grid */
+    .data-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    /* Data Cards */
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 15px;
+    }
+    
+    .card-header h3 {
+        font-size: 18px;
+    }
+    
+    .card-body {
+        padding: 15px;
+    }
+    
+    .card-footer {
+        padding: 12px 15px;
+    }
+    
+    /* Weather Card */
+    .weather-main {
+        padding: 15px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .temperature {
+        font-size: 36px;
+    }
+    
+    .weather-icon {
+        font-size: 45px;
+    }
+    
+    .weather-details {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .detail-item {
+        padding: 10px;
+    }
+    
+    .detail-item .value {
+        font-size: 16px;
+    }
+    
+    /* Crops Card */
+    .card-image {
+        height: 180px;
+    }
+    
+    .season-badge {
+        font-size: 12px;
+        padding: 4px 12px;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Pesticides Card */
+    .product-info {
+        padding: 12px;
+    }
+    
+    .info-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    /* Schemes Card */
+    .scheme-highlight .amount {
+        font-size: 32px;
+    }
+    
+    .scheme-highlight .installments {
+        font-size: 14px;
+    }
+    
+    .scheme-section {
+        margin: 15px 0;
+    }
+    
+    .scheme-section h4 {
+        font-size: 16px;
+    }
+    
+    .scheme-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        padding: 12px;
+        font-size: 15px;
+    }
+    
+    /* Filter Bar */
+    .filter-bar {
+        padding: 15px;
+        gap: 10px;
+    }
+    
+    .filter-bar select,
+    .filter-bar input {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .tab-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    
+    /* Voice Assistant */
+    .voice-assistant-section {
+        margin: 40px 0;
+    }
+    
+    .voice-btn {
+        padding: 15px 30px;
+        font-size: 16px;
+        border-radius: 40px;
+    }
+    
+    .mic-icon {
+        font-size: 20px;
+    }
+    
+    .voice-status {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 40px 0 0;
+        margin-top: 60px;
+    }
+    
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .footer-logo {
+        gap: 10px;
+    }
+    
+    .footer-logo-icon {
+        font-size: 36px;
+    }
+    
+    .footer-logo-text h3 {
+        font-size: 20px;
+    }
+    
+    .footer-social {
+        gap: 10px;
+    }
+    
+    .social-link {
+        width: 38px;
+        height: 38px;
+    }
+    
+    .footer-heading {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    
+    .footer-list li {
+        margin-bottom: 10px;
+    }
+    
+    .contact-item {
+        gap: 10px;
+    }
+    
+    .contact-icon {
+        font-size: 18px;
+    }
+    
+    .footer-stats {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .stat-number {
+        font-size: 28px;
+    }
+    
+    .stat-label {
+        font-size: 13px;
+    }
+    
+    .footer-bottom {
+        padding: 25px 0;
+    }
+    
+    .footer-bottom-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .footer-legal {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .copyright,
+    .footer-legal a {
+        font-size: 13px;
+    }
+    
+    /* Scroll to Top */
+    .scroll-to-top {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    /* Breadcrumb */
+    .breadcrumb {
+        padding: 10px 0;
+    }
+    
+    .breadcrumb-list {
+        font-size: 13px;
+        gap: 8px;
+    }
+    
+    .breadcrumb-item::after {
+        margin-left: 8px;
+        font-size: 16px;
+    }
+    
+    /* Tables - Make Responsive */
+    .data-table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .data-table {
+        font-size: 13px;
+        min-width: 600px;
+    }
+    
+    .data-table th,
+    .data-table td {
+        padding: 8px;
+    }
+    
+    /* Forms */
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="search"],
+    select,
+    textarea {
+        width: 100%;
+        font-size: 16px; /* Prevents zoom on iOS */
+        padding: 12px;
+    }
+    
+    button {
+        font-size: 15px;
+        padding: 12px 20px;
+    }
+    
+    /* Emergency Contact */
+    .emergency-contact {
+        padding: 15px;
+    }
+    
+    .emergency-contact h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    
+    .emergency-contact strong {
+        font-size: 18px;
+    }
+    
+    /* More Info Details */
+    .more-info summary {
+        font-size: 15px;
+    }
+    
+    .more-info ul,
+    .more-info ol {
+        font-size: 14px;
+        margin-left: 15px;
+    }
+}
+
+
+/* ============================================
+   9. Component-Specific Responsiveness
+   ============================================ */
+
+/* Responsive Images in Cards */
+@media (max-width: 767px) {
+    .card-image img {
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+/* Responsive Modal/Dialog */
+@media (max-width: 767px) {
+    .modal,
+    .dialog {
+        width: 95%;
+        margin: 10px auto;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+    
+    .modal-header,
+    .dialog-header {
+        padding: 15px;
+    }
+    
+    .modal-body,
+    .dialog-body {
+        padding: 15px;
+    }
+    
+    .modal-footer,
+    .dialog-footer {
+        padding: 15px;
+        flex-direction: column;
+    }
+    
+    .modal-footer button,
+    .dialog-footer button {
+        width: 100%;
+    }
+}
+
+/* Responsive Alerts */
+@media (max-width: 575px) {
+    .alert {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+/* Responsive Badges */
+@media (max-width: 575px) {
+    .badge {
+        font-size: 11px;
+        padding: 3px 8px;
+    }
+}
+
+/* Responsive Loading Spinner */
+@media (max-width: 575px) {
+    .spinner {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+/* ============================================
+   10. Print Styles
+   ============================================ */
+@media print {
+    /* Hide non-printable elements */
+    .header,
+    .footer,
+    .nav-menu,
+    .mobile-menu-toggle,
+    .language-selector-wrapper,
+    .header-voice-btn,
+    .voice-assistant-section,
+    .scroll-to-top,
+    .filter-bar,
+    .breadcrumb,
+    button,
+    .social-link {
+        display: none !important;
+    }
+    
+    /* Reset backgrounds */
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .page-hero {
+        background: white;
+        color: black;
+        padding: 20px 0;
+    }
+    
+    /* Adjust layouts */
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    .data-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .data-card {
+        page-break-inside: avoid;
+        border: 1px solid #ddd;
+        box-shadow: none;
+    }
+    
+    /* Typography */
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+    }
+    
+    /* Links */
+    a {
+        text-decoration: underline;
+        color: black;
+    }
+    
+    a[href]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+    }
+}
+
+
+/* ============================================
+   Landscape Orientation Adjustments
+   ============================================ */
+@media (max-width: 991px) and (orientation: landscape) {
+    .page-hero {
+        padding: 30px 0;
+    }
+    
+    .page-title {
+        font-size: 32px;
+    }
+    
+    .voice-btn {
+        padding: 12px 25px;
+    }
+    
+    .footer {
+        margin-top: 40px;
+    }
+}
+
+
+/* ============================================
+   High Resolution Displays (Retina)
+   ============================================ */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Optimize for high-DPI displays */
+    .logo-icon,
+    .nav-icon,
+    .icon {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    /* Ensure sharp borders */
+    .data-card,
+    .category-card,
+    button,
+    input,
+    select {
+        border-width: 0.5px;
+    }
+}
+
+
+/* ============================================
+   Accessibility - Reduced Motion
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+/* ============================================
+   Dark Mode Support (Optional)
+   ============================================ */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #0aec73;
+        --text-color: #e01919;
+        --card-background: #0de1e8;
+    }
+    
+    /* Apply dark mode styles only if supported by the app */
+    /* Uncomment the following if you want automatic dark mode */
+    
+    /*
+    body {
+        background: var(--background-color);
+        color: var(--text-color);
+    }
+    
+    .data-card,
+    .category-card {
+        background: var(--card-background);
+    }
+    
+    .header {
+        background: #2d2d2d;
+    }
+    */
+}
+
+
+/* ============================================
+   Very Small Devices (< 320px)
+   ============================================ */
+@media (max-width: 319px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .page-title {
+        font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    h3 {
+        font-size: 16px;
+    }
+    
+    .logo-name {
+        font-size: 16px;
+    }
+    
+    .nav-link {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .voice-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    
+    .data-card {
+        padding: 12px;
+    }
+}
+
+
+/* ============================================
+   Utility Classes for Responsive Design
+   ============================================ */
+
+/* Responsive Text Alignment */
+@media (max-width: 767px) {
+    .text-center-mobile {
+        text-align: center !important;
+    }
+    
+    .text-left-mobile {
+        text-align: left !important;
+    }
+    
+    .text-right-mobile {
+        text-align: right !important;
+    }
+}
+
+/* Responsive Spacing */
+@media (max-width: 767px) {
+    .mt-mobile-0 { margin-top: 0 !important; }
+    .mt-mobile-1 { margin-top: 0.25rem !important; }
+    .mt-mobile-2 { margin-top: 0.5rem !important; }
+    .mt-mobile-3 { margin-top: 1rem !important; }
+    .mt-mobile-4 { margin-top: 1.5rem !important; }
+    .mt-mobile-5 { margin-top: 3rem !important; }
+    
+    .mb-mobile-0 { margin-bottom: 0 !important; }
+    .mb-mobile-1 { margin-bottom: 0.25rem !important; }
+    .mb-mobile-2 { margin-bottom: 0.5rem !important; }
+    .mb-mobile-3 { margin-bottom: 1rem !important; }
+    .mb-mobile-4 { margin-bottom: 1.5rem !important; }
+    .mb-mobile-5 { margin-bottom: 3rem !important; }
+    
+    .p-mobile-0 { padding: 0 !important; }
+    .p-mobile-1 { padding: 0.25rem !important; }
+    .p-mobile-2 { padding: 0.5rem !important; }
+    .p-mobile-3 { padding: 1rem !important; }
+    .p-mobile-4 { padding: 1.5rem !important; }
+    .p-mobile-5 { padding: 3rem !important; }
+}
+
+/* Responsive Width */
+@media (max-width: 767px) {
+    .w-mobile-100 {
+        width: 100% !important;
+    }
+    
+    .w-mobile-75 {
+        width: 75% !important;
+    }
+    
+    .w-mobile-50 {
+        width: 50% !important;
+    }
+    
+    .w-mobile-25 {
+        width: 25% !important;
+    }
+}
+
+/* Responsive Flex */
+@media (max-width: 767px) {
+    .flex-mobile-column {
+        flex-direction: column !important;
+    }
+    
+    .flex-mobile-row {
+        flex-direction: row !important;
+    }
+}
+
+
+/* End of responsive.css */

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast - Krishi Sathi</title>
+    <link rel="stylesheet" href="assets/css/category.css/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">🌾 Krishi Sathi</a>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="weather.html" class="active">Weather</a></li>
+                    <li><a href="seeds-crops.html">Seeds & Crops</a></li>
+                    <li><a href="pesticides.html">Pesticides</a></li>
+                    <li><a href="schemes.html">Schemes</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <select id="languageSelect" onchange="changeLanguage()">
+                    <option value="en">English</option>
+                    <option value="hi">हिन्दी</option>
+                    <option value="mr">मराठी</option>
+                    <option value="kn">ಕನ್ನಡ</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">🌤️ <span data-translate="weather-title">Weather Forecast</span></h1>
+                <p class="page-subtitle" data-translate="weather-subtitle">Get accurate weather predictions for better crop planning</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="filter-bar">
+                    <div class="search-box">
+                        <input type="text" id="locationSearch" placeholder="Search by location...">
+                        <button onclick="filterByLocation()">🔍</button>
+                    </div>
+                    <button class="refresh-btn" onclick="loadWeatherData()">🔄 Refresh Data</button>
+                </div>
+
+                <div id="weatherData" class="data-grid">
+                    <!-- Weather cards will be loaded dynamically -->
+                    <div class="data-card weather-card">
+                        <div class="card-header">
+                            <h3>Mumbai</h3>
+                            <span class="date">2025-10-29</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="weather-main">
+                                <div class="temperature">28°C</div>
+                                <div class="weather-icon">☀️</div>
+                            </div>
+                            <div class="weather-details">
+                                <div class="detail-item">
+                                    <span class="label">💧 Humidity:</span>
+                                    <span class="value">65%</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="label">🌧️ Rainfall:</span>
+                                    <span class="value">5mm</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="label">💨 Wind:</span>
+                                    <span class="value">12 km/h</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <p class="advice">Good conditions for irrigation. Consider watering crops in the evening.</p>
+                        </div>
+                    </div>
+
+                    <!-- More cards will be generated dynamically -->
+                </div>
+
+                <div class="voice-assistant-section">
+                    <button id="voiceButton" class="voice-btn">
+                        <span class="pulse"></span>
+                        <span class="mic-icon">🎤</span>
+                        <span id="voiceButtonText">Ask about Weather</span>
+                    </button>
+                    <div id="voiceStatus" class="voice-status"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Krishi Sathi. All rights reserved.</p>
+            <p>Empowering farmers with technology</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/language-switcher.js"></script>
+    <script src="assets/js/voice-assistant.js"></script>
+    <script src="assets/js/weather.js"></script>
+</body>
+</html>

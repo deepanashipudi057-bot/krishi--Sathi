@@ -1,0 +1,766 @@
+/* ===== CSS RESET & BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2d5016;
+    --secondary-color: #4a7c2c;
+    --accent-color: #f39c12;
+    --success-color: #27ae60;
+    --warning-color: #e67e22;
+    --danger-color: #e74c3c;
+    --light-bg: #f8f9fa;
+    --white: #ffffff;
+    --text-dark: #2c3e50;
+    --text-light: #7f8c8d;
+    --border-color: #dfe6e9;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 15px rgba(0,0,0,0.15);
+    --shadow-lg: 0 8px 30px rgba(0,0,0,0.2);
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== HEADER STYLES ===== */
+.header {
+    background: var(--white);
+    box-shadow: var(--shadow-md);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo a {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.logo a:hover {
+    color: var(--secondary-color);
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: var(--transition);
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.language-selector select {
+    padding: 8px 15px;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background: var(--white);
+    transition: var(--transition);
+}
+
+.language-selector select:hover {
+    background: var(--light-bg);
+}
+
+/* ===== HERO SECTION ===== */
+.page-hero {
+    background: linear-gradient(135deg, rgba(45, 80, 22, 0.9) 0%, rgba(74, 124, 44, 0.9) 100%);
+    padding: 60px 0;
+    text-align: center;
+    color: var(--white);
+}
+
+.page-title {
+    font-size: 48px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.page-subtitle {
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+.seeds-hero {
+    background: linear-gradient(135deg, rgba(76, 175, 80, 0.9) 0%, rgba(56, 142, 60, 0.9) 100%);
+}
+
+.pesticides-hero {
+    background: linear-gradient(135deg, rgba(243, 156, 18, 0.9) 0%, rgba(230, 126, 34, 0.9) 100%);
+}
+
+.schemes-hero {
+    background: linear-gradient(135deg, rgba(52, 152, 219, 0.9) 0%, rgba(41, 128, 185, 0.9) 100%);
+}
+
+/* ===== CONTENT SECTION ===== */
+.content-section {
+    padding: 40px 0;
+}
+
+.filter-bar {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 30px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.filter-bar select,
+.filter-bar input {
+    padding: 10px 15px;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 16px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+}
+
+.search-box input {
+    flex: 1;
+}
+
+.search-box button,
+.refresh-btn {
+    padding: 10px 20px;
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: var(--transition);
+}
+
+.search-box button:hover,
+.refresh-btn:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.tab-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    background: var(--light-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: var(--transition);
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+    background: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+}
+
+/* ===== DATA GRID ===== */
+.data-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+/* ===== DATA CARDS ===== */
+.data-card {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    position: relative;
+}
+
+.data-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.card-header {
+    padding: 20px;
+    border-bottom: 2px solid var(--light-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header h3 {
+    color: var(--primary-color);
+    font-size: 22px;
+    margin: 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-footer {
+    padding: 15px 20px;
+    background: var(--light-bg);
+    border-top: 2px solid var(--border-color);
+}
+
+/* ===== WEATHER CARD SPECIFIC ===== */
+.weather-card .date {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.weather-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    color: var(--white);
+}
+
+.temperature {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.weather-icon {
+    font-size: 60px;
+}
+
+.weather-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.detail-item {
+    background: var(--light-bg);
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-item .label {
+    font-size: 14px;
+    color: var(--text-light);
+    margin-bottom: 5px;
+}
+
+.detail-item .value {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.advice {
+    background: #fff3cd;
+    padding: 12px;
+    border-left: 4px solid var(--warning-color);
+    border-radius: 5px;
+    color: var(--text-dark);
+    font-style: italic;
+}
+
+/* ===== CROPS CARD SPECIFIC ===== */
+.card-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.season-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--success-color);
+    color: var(--white);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.crop-type {
+    background: var(--accent-color);
+    color: var(--white);
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.info-item {
+    background: var(--light-bg);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.description {
+    margin: 15px 0;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.more-info {
+    margin-top: 15px;
+    border-top: 2px solid var(--light-bg);
+    padding-top: 15px;
+}
+
+.more-info summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.more-info ul,
+.more-info ol {
+    margin-left: 20px;
+    color: var(--text-dark);
+}
+
+.more-info li {
+    margin: 8px 0;
+}
+
+/* ===== PESTICIDE CARD SPECIFIC ===== */
+.card-ribbon {
+    position: absolute;
+    top: 15px;
+    left: -10px;
+    padding: 8px 20px;
+    background: var(--danger-color);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: var(--shadow-md);
+}
+
+.card-ribbon.warning {
+    background: var(--warning-color);
+}
+
+.product-type {
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    color: var(--white);
+}
+
+.product-type.fertilizer {
+    background: var(--success-color);
+}
+
+.product-type.pesticide {
+    background: var(--danger-color);
+}
+
+.product-info {
+    background: var(--light-bg);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.info-row .label {
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+.info-row .value {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.usage-section,
+.precautions-section {
+    margin: 20px 0;
+}
+
+.usage-section h4,
+.precautions-section h4 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.usage-section ul,
+.precautions-section ul {
+    margin-left: 20px;
+}
+
+.usage-section li,
+.precautions-section li {
+    margin: 8px 0;
+    color: var(--text-dark);
+}
+
+.emergency-contact {
+    background: #f8d7da;
+    border: 2px solid var(--danger-color);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.emergency-contact h3 {
+    color: var(--danger-color);
+    margin-bottom: 10px;
+}
+
+.emergency-contact strong {
+    color: var(--danger-color);
+    font-size: 20px;
+}
+
+/* ===== SCHEME CARD SPECIFIC ===== */
+.schemes-grid {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.scheme-badge {
+    background: var(--success-color);
+    color: var(--white);
+    padding: 8px 20px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    border-radius: 0 0 10px 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.scheme-type {
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    color: var(--white);
+}
+
+.scheme-type.subsidy {
+    background: var(--success-color);
+}
+
+.scheme-type.loan {
+    background: #3498db;
+}
+
+.scheme-type.insurance {
+    background: var(--accent-color);
+}
+
+.scheme-type.grant {
+    background: #9b59b6;
+}
+
+.scheme-highlight {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.scheme-highlight .amount {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.scheme-highlight .installments {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.scheme-section {
+    margin: 20px 0;
+}
+
+.scheme-section h4 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.scheme-section p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.scheme-section ul,
+.scheme-section ol {
+    margin-left: 25px;
+}
+
+.scheme-section li {
+    margin: 8px 0;
+}
+
+.scheme-contact {
+    background: var(--light-bg);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.scheme-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-primary,
+.btn-secondary {
+    flex: 1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: var(--white);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background: var(--light-bg);
+}
+
+/* ===== VOICE ASSISTANT ===== */
+.voice-assistant-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.voice-btn {
+    position: relative;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: var(--white);
+    border: none;
+    padding: 20px 40px;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: var(--shadow-md);
+}
+
+.voice-btn:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-lg);
+}
+
+.voice-btn .pulse {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background: inherit;
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+
+.voice-btn.active .pulse {
+    animation: pulse-animation 1.5s infinite;
+}
+
+@keyframes pulse-animation {
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+.mic-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.voice-status {
+    margin-top: 20px;
+    font-size: 16px;
+    color: var(--white);
+    font-weight: bold;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: var(--white);
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .page-title {
+        font-size: 32px;
+    }
+
+    .page-subtitle {
+        font-size: 16px;
+    }
+
+    .data-grid,
+    .schemes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-bar {
+        flex-direction: column;
+    }
+
+    .filter-bar select,
+    .filter-bar input {
+        width: 100%;
+    }
+
+    .weather-main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .scheme-actions {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo a {
+        font-size: 20px;
+    }
+
+    .page-title {
+        font-size: 24px;
+    }
+
+    .temperature {
+        font-size: 36px;
+    }
+
+    .weather-icon {
+        font-size: 48px;
+    }
+}

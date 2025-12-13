@@ -1,0 +1,184 @@
+{
+  "seeds_crops": [
+    {
+      "id": 1,
+      "season": "kharif",
+      "crop_type": "cereal",
+      "planting_time": "June-July",
+      "harvesting_time": "October-November",
+      "yield_per_acre": "25-30 quintals",
+      "water_requirement": "High",
+      "soil_type": "Clayey to loamy",
+      "translations": {
+        "en": {
+          "crop_name": "Rice",
+          "description": "Major cereal crop grown during monsoon season. Requires flooded fields for optimal growth.",
+          "care_instructions": "Maintain water level at 2-5 cm, apply fertilizers in three splits, control weeds regularly, protect from pests.",
+          "benefits": "High nutritional value, staple food for billions, good income potential, improves soil health."
+        },
+        "hi": {
+          "crop_name": "चावल",
+          "description": "मानसून के मौसम में उगाई जाने वाली प्रमुख अनाज फसल। इष्टतम वृद्धि के लिए जलमग्न खेतों की आवश्यकता है।",
+          "care_instructions": "2-5 सेमी पानी का स्तर बनाए रखें, उर्वरकों को तीन भागों में लगाएं, नियमित रूप से खरपतवार नियंत्रित करें, कीटों से सुरक्षा करें।",
+          "benefits": "उच्च पोषण मूल्य, अरबों के लिए मुख्य भोजन, अच्छी आय की संभावना, मिट्टी के स्वास्थ्य में सुधार।"
+        },
+        "mr": {
+          "crop_name": "तांदूळ",
+          "description": "पावसाळ्यात पिकवल्या जाणाऱ्या मुख्य धान्य पिक. इष्टतम वाढीसाठी पुरलेल्या शेतांची गरज आहे.",
+          "care_instructions": "2-5 सेमी पाण्याचा स्तर राखा, खत तीन टप्प्यांत वापरा, नियमितपणे तण नियंत्रित करा, कीटकांपासून संरक्षण करा.",
+          "benefits": "उच्च पौष्टिक मूल्य, अब्जावधी लोकांसाठी मुख्य अन्न, चांगला उत्पन्न संभावना, माती आरोग्य सुधारते."
+        },
+        "kn": {
+          "crop_name": "ಅಕ್ಕಿ",
+          "description": "ಮುಸ್ಲಾದ ಹೊತ್ತಿನಲ್ಲಿ ಬೆಳೆಯುವ ಪ್ರಮುಖ ಧಾನ್ಯ ಬೆಳೆ. ಉತ್ತಮ ಬೆಳವಣಿಗೆ ಮುಳುಗಿದ ಹೊಲಗಳ ಅಗತ್ಯವಿದೆ.",
+          "care_instructions": "2-5 ಸೆಂಟಿಮೀಟರ್ ನೀರಿನ ಮಟ್ಟವನ್ನು ಕಾಯ್ದುಕೊಳ್ಳಿ, ರಸಗೊಬ್ಬರವನ್ನು ಮೂರು ಹಂತಗಳಲ್ಲಿ ಅನ್ವಯಿಸಿ, ನಿಯಮಿತವಾಗಿ ಹುಲ್ಲುಗಳನ್ನು ನಿಯಂತ್ರಿಸಿ, ಕೀಟಗಳಿಂದ ರಕ್ಷಿಸಿ.",
+          "benefits": "ಉನ್ನತ ಪೌಷ್ಟಿಕ ಮೌಲ್ಯ, ಅರ್ಬಾನುಕೋಟಿ ಜನರಿಗೆ ಪ್ರಮುಖ ಆಹಾರ, ಉತ್ತಮ ಆದಾಯ ಸಾಮರ್ಥ್ಯ, ಮಣ್ಣಿನ ಆರೋಗ್ಯವನ್ನು ಸುಧಾರಿಸುತ್ತದೆ."
+        }
+      }
+    },
+    {
+      "id": 2,
+      "season": "rabi",
+      "crop_type": "cereal",
+      "planting_time": "October-November",
+      "harvesting_time": "March-April",
+      "yield_per_acre": "18-22 quintals",
+      "water_requirement": "Moderate",
+      "soil_type": "Well-drained loamy",
+      "translations": {
+        "en": {
+          "crop_name": "Wheat",
+          "description": "Major rabi crop grown in winter season. Important cereal grain for food security.",
+          "care_instructions": "Timely irrigation at critical stages, proper weed management, timely pest control, balanced fertilization.",
+          "benefits": "High demand in market, good market price, excellent nutritional value, drought tolerant varieties available."
+        },
+        "hi": {
+          "crop_name": "गेहूं",
+          "description": "सर्दियों के मौसम में उगाई जाने वाली प्रमुख रबी फसल। खाद्य सुरक्षा के लिए महत्वपूर्ण अनाज।",
+          "care_instructions": "महत्वपूर्ण चरणों में समय पर सिंचाई, उचित खरपतवार प्रबंधन, समय पर कीट नियंत्रण, संतुलित उर्वरक।",
+          "benefits": "बाजार में उच्च मांग, अच्छी बाजार कीमत, उत्कृष्ट पोषण मूल्य, सूखा सहिष्णु किस्में उपलब्ध।"
+        },
+        "mr": {
+          "crop_name": "गहू",
+          "description": "हिवाळ्यात पिकवल्या जाणाऱ्या मुख्य रब्बी पिक. अन्न सुरक्षा साठी महत्त्वाचे धान्य धान्य.",
+          "care_instructions": "महत्त्वाच्या टप्प्यावर वेळेवर पाणी, योग्य तण व्यवस्थापन, वेळेवर कीटक नियंत्रण, संतुलित खत.",
+          "benefits": "बाजारात उच्च मागणी, चांगली बाजार किंमत, उत्कृष्ट पौष्टिक मूल्य, दुष्काळ सहिष्णु जाती उपलब्ध."
+        },
+        "kn": {
+          "crop_name": "ಗೋಧಿ",
+          "description": "ಹಿಂದಿನ ಋತುವಿನಲ್ಲಿ ಬೆಳೆಯುವ ಪ್ರಮುಖ ರಬ್ಬಿ ಬೆಳೆ. ಆಹಾರ ಭದ್ರತೆಗೆ ಮಹತ್ವದ ಧಾನ್ಯ ಧಾನ್ಯ.",
+          "care_instructions": "ನಿರ್ಣಾಯಕ ಹಂತಗಳಲ್ಲಿ ಸಮಯೋಚಿತ ನೀರಾವರಿ, ಸರಿಯಾದ ಹುಲ್ಲು ನಿರ್ವಹಣೆ, ಸಮಯೋಚಿತ ಕೀಟ ನಿಯಂತ್ರಣ, ಸಮತೋಲಿತ ರಸಗೊಬ್ಬರ.",
+          "benefits": "ಮಾರುಕಟ್ಟೆಯಲ್ಲಿ ಉನ್ನತ ಬೇಡಿಕೆ, ಉತ್ತಮ ಮಾರುಕಟ್ಟೆ ಬೆಲೆ, ಉತ್ತಮ ಪೌಷ್ಟಿಕ ಮೌಲ್ಯ, ಒಣ ಬೆಳೆ ಸಹಿಷ್ಣು ವೈವಿಧ್ಯಗಳು ಲಭ್ಯ."
+        }
+      }
+    },
+    {
+      "id": 3,
+      "season": "kharif",
+      "crop_type": "pulse",
+      "planting_time": "June-July",
+      "harvesting_time": "September-October",
+      "yield_per_acre": "8-12 quintals",
+      "water_requirement": "Moderate",
+      "soil_type": "Well-drained sandy loam",
+      "translations": {
+        "en": {
+          "crop_name": "Moong",
+          "description": "Fast-growing pulse crop, excellent for soil fertility and protein-rich diet.",
+          "care_instructions": "Sow in lines 30-45 cm apart, provide support if needed, harvest when 80% pods are matured.",
+          "benefits": "High protein content (24%), improves soil health through nitrogen fixation, quick maturing (60-70 days)."
+        },
+        "hi": {
+          "crop_name": "मूंग",
+          "description": "तेजी से बढ़ने वाली दलहन फसल, मिट्टी की उर्वरता और प्रोटीन युक्त आहार के लिए उत्कृष्ट।",
+          "care_instructions": "30-45 सेमी दूरी पर लाइनों में बोएं, यदि आवश्यक हो तो सहारा दें, 80% फलियाँ पकने पर काटें।",
+          "benefits": "उच्च प्रोटीन सामग्री (24%), नाइट्रोजन फिक्सेशन के माध्यम से मिट्टी के स्वास्थ्य में सुधार, तेजी से पकना (60-70 दिन)।"
+        },
+        "mr": {
+          "crop_name": "मूग",
+          "description": "वेगाने वाढणारे डाळ पिक, माती सुपीकता आणि प्रोटीनयुक्त आहारासाठी उत्कृष्ट.",
+          "care_instructions": "30-45 सेमी अंतरावर ओळींमध्ये पेरणी करा, गरज असल्यास आधार द्या, 80% शेंगा पिकल्यावर कापणी करा.",
+          "benefits": "उच्च प्रोटीन सामग्री (24%), नायट्रोजन स्थिरीकरणाद्वारे माती आरोग्य सुधारते, जलद परिपक्व (60-70 दिवस)."
+        },
+        "kn": {
+          "crop_name": "ಹೆಸರು ಕಾಳು",
+          "description": "ವೇಗವಾಗಿ ಬೆಳೆಯುವ ಕಾಳು ಬೆಳೆ, ಮಣ್ಣಿನ ಸಾರವತ್ತನ ಮತ್ತು ಪ್ರೋಟೀನ್ ಸಮೃದ್ಧ ಆಹಾರಕ್ಕೆ ಉತ್ತಮ.",
+          "care_instructions": "30-45 ಸೆಂಟಿಮೀಟರ್ ಅಂತರದಲ್ಲಿ ಸಾಲುಗಳಲ್ಲಿ ಬಿತ್ತಿ, ಅಗತ್ಯವಿದ್ದರೆ ಬೆಂಬಲ ನೀಡಿ, 80% ಹಂಸಗಳು ಪರಿಪಕ್ವವಾದಾಗ ಕೊಯ್ಯಿ.",
+          "benefits": "ಉನ್ನತ ಪ್ರೋಟೀನ್ ಮಟ್ಟ (24%), ನೈಟ್ರೋಜನ್ ಸ್ಥಿರೀಕರಣದ ಮೂಲಕ ಮಣ್ಣಿನ ಆರೋಗ್ಯವನ್ನು ಸುಧಾರಿಸುತ್ತದೆ, ವೇಗವಾಗಿ ಪರಿಪಕ್ವ (60-70 ದಿನಗಳು)."
+        }
+      }
+    },
+    {
+      "id": 4,
+      "season": "rabi",
+      "crop_type": "pulse",
+      "planting_time": "October-November",
+      "harvesting_time": "February-March",
+      "yield_per_acre": "10-15 quintals",
+      "water_requirement": "Low to Moderate",
+      "soil_type": "Light to medium textured",
+      "translations": {
+        "en": {
+          "crop_name": "Chickpea",
+          "description": "Important rabi pulse crop, rich in protein and minerals. Also known as Bengal Gram.",
+          "care_instructions": "Sow at 30-45 cm spacing, provide weed control, protect from pod borer, harvest when plants turn yellow.",
+          "benefits": "High protein (17-20%), rich in minerals, drought tolerant, improves soil fertility."
+        },
+        "hi": {
+          "crop_name": "चना",
+          "description": "महत्वपूर्ण रबी दलहन फसल, प्रोटीन और खनिजों से भरपूर। बंगाल चना के नाम से भी जाना जाता है।",
+          "care_instructions": "30-45 सेमी की दूरी पर बोएं, खरपतवार नियंत्रण प्रदान करें, फली छेदक से सुरक्षा करें, पौधे पीले होने पर काटें।",
+          "benefits": "उच्च प्रोटीन (17-20%), खनिजों से भरपूर, सूखा सहिष्णु, मिट्टी की उर्वरता में सुधार।"
+        },
+        "mr": {
+          "crop_name": "हरभरा",
+          "description": "महत्त्वाचे रब्बी डाळ पिक, प्रोटीन आणि खनिजांनी समृद्ध. बंगाल चना म्हणूनही ओळखले जाते.",
+          "care_instructions": "30-45 सेमी अंतरावर पेरणी करा, तण नियंत्रण प्रदान करा, शेंगा छेदकापासून संरक्षण करा, झाडे पिवळी पडल्यावर कापणी करा.",
+          "benefits": "उच्च प्रोटीन (17-20%), खनिजांनी समृद्ध, दुष्काळ सहिष्णु, माती सुपीकता सुधारते."
+        },
+        "kn": {
+          "crop_name": "ಚಣದ ಕಾಳು",
+          "description": "ಮಹತ್ವದ ರಬ್ಬಿ ಕಾಳು ಬೆಳೆ, ಪ್ರೋಟೀನ್ ಮತ್ತು ಖನಿಜಗಳಿಂದ ಸಮೃದ್ಧ. ಬೆಂಗಳೂರು ಕಾಳು ಎಂದೂ ಕರೆಯಲ್ಪಡುತ್ತದೆ.",
+          "care_instructions": "30-45 ಸೆಂಟಿಮೀಟರ್ ಅಂತರದಲ್ಲಿ ಬಿತ್ತಿ, ಹುಲ್ಲು ನಿಯಂತ್ರಣವನ್ನು ಒದಗಿಸಿ, ಹಂಸ ಚುಚ್ಚುಮದ್ದಿನಿಂದ ರಕ್ಷಿಸಿ, ಸಸ್ಯಗಳು ಹಳದೀ ಬಣ್ಣವನ್ನು ಪಡೆದಾಗ ಕೊಯ್ಯಿ.",
+          "benefits": "ಉನ್ನತ ಪ್ರೋಟೀನ್ (17-20%), ಖನಿಜಗಳಿಂದ ಸಮೃದ್ಧ, ಒಣ ಬೆಳೆ ಸಹಿಷ್ಣು, ಮಣ್ಣಿನ ಸಾರವತ್ತನವನ್ನು ಸುಧಾರಿಸುತ್ತದೆ."
+        }
+      }
+    },
+    {
+      "id": 5,
+      "season": "kharif",
+      "crop_type": "vegetable",
+      "planting_time": "June-August",
+      "harvesting_time": "September-December",
+      "yield_per_acre": "80-120 quintals",
+      "water_requirement": "High",
+      "soil_type": "Rich loamy soil",
+      "translations": {
+        "en": {
+          "crop_name": "Tomato",
+          "description": "Popular vegetable crop grown worldwide. Rich source of vitamins and minerals.",
+          "care_instructions": "Provide stakes for support, regular watering, protect from diseases, prune regularly for better yield.",
+          "benefits": "High vitamin C content, good income potential, can be grown in various climates, multiple harvests possible."
+        },
+        "hi": {
+          "crop_name": "टमाटर",
+          "description": "दुनिया भर में उगाई जाने वाली लोकप्रिय सब्जी फसल। विटामिन और खनिजों का समृद्ध स्रोत।",
+          "care_instructions": "सहारे के लिए खूंटे प्रदान करें, नियमित पानी दें, बीमारियों से सुरक्षा करें, बेहतर उपज के लिए नियमित रूप से छंटाई करें।",
+          "benefits": "उच्च विटामिन सी सामग्री, अच्छी आय की संभावना, विभिन्न जलवायु में उगाया जा सकता है, एकाधिक कटाई संभव।"
+        },
+        "mr": {
+          "crop_name": "टोमॅटो",
+          "description": "जगभरात पिकवल्या जाणाऱ्या लोकप्रिय भाजी पिक. जीवनसत्त्वे आणि खनिजांचा समृद्ध स्रोत.",
+          "care_instructions": "आधारासाठी खांब पुरवा, नियमित पाणी द्या, रोगांपासून संरक्षण करा, चांगल्या उत्पादनासाठी नियमित छाटणी करा.",
+          "benefits": "उच्च जीवनसत्त्वे सी सामग्री, चांगला उत्पन्न संभावना, विविध हवामानात पिकवता येते, अनेक कापण्या शक्य."
+        },
+        "kn": {
+          "crop_name": "ಟೊಮೆಟೊ",
+          "description": "ವಿಶ್ವಾದ್ಯಂತ ಬೆಳೆಯುವ ಜನಪ್ರಿಯ ತರಕಾರಿ ಬೆಳೆ. ವಿಟಮಿನ್ ಮತ್ತು ಖನಿಜಗಳ ಸಮೃದ್ಧ ಮೂಲ.",
+          "care_instructions": "ಬೆಂಬಲಕ್ಕೆ ಮರಗಳನ್ನು ಒದಗಿಸಿ, ನಿಯಮಿತ ನೀರಾವರಿ, ರೋಗಗಳಿಂದ ರಕ್ಷಿಸಿ, ಉತ್ತಮ ಉತ್ಪಾದನೆಗಾಗಿ ನಿಯಮಿತವಾಗಿ ಕತ್ತರಿಸಿ.",
+          "benefits": "ಉನ್ನತ ವಿಟಮಿನ್ ಸಿ ಮಟ್ಟ, ಉತ್ತಮ ಆದಾಯ ಸಾಮರ್ಥ್ಯ, ವಿವಿಧ ಹವಾಮಾನಗಳಲ್ಲಿ ಬೆಳೆಯಬಹುದು, ಬಹು ಕೊಯ್ಲು ಸಾಧ್ಯ."
+        }
+      }
+    }
+  ]
+}

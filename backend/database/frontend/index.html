@@ -1,0 +1,75 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishi Sathi - कृषि साथी</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🌾 Krishi Sathi - कृषि साथी</h1>
+            <div class="language-selector">
+                <select id="languageSelect" onchange="changeLanguage()">
+                    <option value="en">English</option>
+                    <option value="hi">हिन्दी</option>
+                    <option value="mr">मराठी</option>
+                    <option value="kn">ಕನ್ನಡ</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2 id="welcomeText">Welcome to Krishi Sathi</h2>
+            <p id="subtitleText">Your Agricultural Companion</p>
+        </section>
+
+        <section class="categories-grid">
+            <div class="category-card" onclick="location.href='weather.html'">
+                <div class="icon">🌤️</div>
+                <h3 data-translate="weather">Weather Forecast</h3>
+                <p data-translate="weather-desc">Get accurate weather predictions</p>
+            </div>
+
+            <div class="category-card" onclick="location.href='seeds-crops.html'">
+                <div class="icon">🌱</div>
+                <h3 data-translate="seeds">Seeds & Crops</h3>
+                <p data-translate="seeds-desc">Information about seeds and cultivation</p>
+            </div>
+
+            <div class="category-card" onclick="location.href='pesticides.html'">
+                <div class="icon">🧪</div>
+                <h3 data-translate="pesticides">Pesticides & Fertilizers</h3>
+                <p data-translate="pesticides-desc">Safe and effective farming solutions</p>
+            </div>
+
+            <div class="category-card" onclick="location.href='schemes.html'">
+                <div class="icon">💰</div>
+                <h3 data-translate="schemes">Government Schemes</h3>
+                <p data-translate="schemes-desc">Loans, subsidies, and support programs</p>
+            </div>
+        </section>
+
+        <section class="voice-assistant">
+            <button id="voiceButton" class="voice-btn">
+                <span class="mic-icon">🎤</span>
+                <span id="voiceButtonText">Ask Voice Assistant</span>
+            </button>
+            <div id="voiceStatus" class="voice-status"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Krishi Sathi. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/language-switcher.js"></script>
+    <script src="assets/js/voice-assistant.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

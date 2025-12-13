@@ -1,0 +1,220 @@
+{
+  "government_schemes": [
+    {
+      "id": 1,
+      "scheme_type": "subsidy",
+      "eligibility": "All landholding farmers",
+      "amount_range": "₹6,000 per year",
+      "contact_info": "155261 / 1800-180-1551",
+      "website": "https://pmkisan.gov.in",
+      "active": true,
+      "state": "national",
+      "translations": {
+        "en": {
+          "scheme_name": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
+          "description": "PM-KISAN provides income support to all landholding farmers' families across the country. The scheme aims to supplement financial needs of farmers for procuring agricultural inputs and meeting other household needs.",
+          "benefits": "Direct income support of ₹6,000 per year in three equal installments of ₹2,000 each, transferred directly to farmer's bank account. No intermediaries involved. Fast and transparent payment system.",
+          "application_process": "1. Visit PM-KISAN portal: pmkisan.gov.in\n2. Click on 'Farmer's Corner'\n3. Select 'New Farmer Registration'\n4. Enter Aadhaar number and mobile number\n5. Fill complete registration form with land details\n6. Upload required documents (Aadhaar, land ownership)\n7. Submit application and note down registration number\n8. Track status online using registration number"
+        },
+        "hi": {
+          "scheme_name": "पीएम-किसान (प्रधानमंत्री किसान सम्मान निधि)",
+          "description": "पीएम-किसान पूरे देश में सभी भूमिधारक किसान परिवारों को आय सहायता प्रदान करता है। यह योजना कृषि इनपुट खरीदने और अन्य घरेलू जरूरतों को पूरा करने के लिए किसानों की वित्तीय जरूरतों को पूरा करने का लक्ष्य रखती है।",
+          "benefits": "प्रत्येक ₹2,000 की तीन समान किस्तों में प्रति वर्ष ₹6,000 की प्रत्यक्ष आय सहायता, सीधे किसान के बैंक खाते में स्थानांतरित की जाती है। कोई बिचौलिया शामिल नहीं। तेज और पारदर्शी भुगतान प्रणाली।",
+          "application_process": "1. पीएम-किसान पोर्टल पर जाएं: pmkisan.gov.in\n2. 'किसान कॉर्नर' पर क्लिक करें\n3. 'नया किसान पंजीकरण' चुनें\n4. आधार नंबर और मोबाइल नंबर दर्ज करें\n5. भूमि विवरण के साथ पूर्ण पंजीकरण फॉर्म भरें\n6. आवश्यक दस्तावेज अपलोड करें (आधार, भूमि स्वामित्व)\n7. आवेदन जमा करें और पंजीकरण संख्या नोट करें\n8. पंजीकरण संख्या का उपयोग करके ऑनलाइन स्थिति ट्रैक करें"
+        },
+        "mr": {
+          "scheme_name": "पीएम-किसान (प्रधानमंत्री किसान सम्मान निधी)",
+          "description": "पीएम-किसान संपूर्ण देशातील सर्व जमीनधारक शेतकरी कुटुंबांना उत्पन्न आधार प्रदान करते. ही योजना कृषी निविष्ठा खरेदी करण्यासाठी आणि इतर घरगुती गरजा पूर्ण करण्यासाठी शेतकऱ्यांच्या आर्थिक गरजा पूर्ण करण्याचे उद्दिष्ट ठेवते.",
+          "benefits": "प्रत्येकी ₹2,000 च्या तीन समान हप्त्यांमध्ये दरवर्षी ₹6,000 चे थेट उत्पन्न समर्थन, थेट शेतकऱ्याच्या बँक खात्यात हस्तांतरित केले जाते. कोणतेही मध्यस्थ नाहीत. जलद आणि पारदर्शक देयक प्रणाली.",
+          "application_process": "1. पीएम-किसान पोर्टलला भेट द्या: pmkisan.gov.in\n2. 'शेतकरी कॉर्नर' वर क्लिक करा\n3. 'नवीन शेतकरी नोंदणी' निवडा\n4. आधार क्रमांक आणि मोबाइल नंबर प्रविष्ट करा\n5. जमीन तपशीलासह संपूर्ण नोंदणी फॉर्म भरा\n6. आवश्यक कागदपत्रे अपलोड करा (आधार, जमीन मालकी)\n7. अर्ज सबमिट करा आणि नोंदणी क्रमांक नोंद करा\n8. नोंदणी क्रमांक वापरून ऑनलाइन स्थिती ट्रॅक करा"
+        },
+        "kn": {
+          "scheme_name": "ಪಿಎಮ್-ಕಿಸಾನ್ (ಪ್ರಧಾನಮಂತ್ರಿ ಕಿಸಾನ್ ಸಮ್ಮಾನ್ ನಿಧಿ)",
+          "description": "ಪಿಎಮ್-ಕಿಸಾನ್ ದೇಶಾದ್ಯಂತ ಎಲ್ಲಾ ಭೂ ಹೊಂದಿರುವ ರೈತ ಕುಟುಂಬಗಳಿಗೆ ಆದಾಯ ಬೆಂಬಲವನ್ನು ನೀಡುತ್ತದೆ. ಈ ಯೋಜನೆಯು ಕೃಷಿ ಒಳಹರಿವುಗಳನ್ನು ಖರೀದಿಸಲು ಮತ್ತು ಇತರ ಮನೆಯ ಅಗತ್ಯಗಳನ್ನು ಪೂರೈಸಲು ರೈತರ ಆರ್ಥಿಕ ಅಗತ್ಯಗಳನ್ನು ಪೂರೈಸುವ ಗುರಿಯನ್ನು ಹೊಂದಿದೆ.",
+          "benefits": "ಪ್ರತಿಯೊಂದು ₹2,000 ರ ಮೂರು ಸಮಾನ ಕಂತುಗಳಲ್ಲಿ ವರ್ಷಕ್ಕೆ ₹6,000 ರ ನೇರ ಆದಾಯ ಬೆಂಬಲ, ನೇರವಾಗಿ ರೈತರ ಬ್ಯಾಂಕ್ ಖಾತೆಗೆ ವರ್ಗಾಯಿಸಲಾಗುತ್ತದೆ. ಯಾವುದೇ ಮಧ್ಯವರ್ತಿಗಳು ತೊಡಗಿಸಿಕೊಂಡಿಲ್ಲ. ವೇಗವಾದ ಮತ್ತು ಪಾರದರ್ಶಕ ಪಾವತಿ ವ್ಯವಸ್ಥೆ.",
+          "application_process": "1. ಪಿಎಮ್-ಕಿಸಾನ್ ಪೋರ್ಟಲ್‌ಗೆ ಭೇಟಿ ನೀಡಿ: pmkisan.gov.in\n2. 'ರೈತರ ಮೂಲೆ' ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ\n3. 'ಹೊಸ ರೈತ ನೋಂದಣಿ' ಆಯ್ಕೆಮಾಡಿ\n4. ಆಧಾರ್ ಸಂಖ್ಯೆ ಮತ್ತು ಮೊಬೈಲ್ ಸಂಖ್ಯೆ ನಮೂದಿಸಿ\n5. ಭೂಮಿ ವಿವರಗಳೊಂದಿಗೆ ಸಂಪೂರ್ಣ ನೋಂದಣಿ ಫಾರ್ಮ್ ಭರ್ತಿ ಮಾಡಿ\n6. ಅಗತ್ಯ ದಾಖಲೆಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ (ಆಧಾರ್, ಭೂಮಿ ಮಾಲೀಕತ್ವ)\n7. ಅರ್ಜಿ ಸಲ್ಲಿಸಿ ಮತ್ತು ನೋಂದಣಿ ಸಂಖ್ಯೆಯನ್ನು ಗಮನಿಸಿ\n8. ನೋಂದಣಿ ಸಂಖ್ಯೆಯನ್ನು ಬಳಸಿಕೊಂಡು ಆನ್‌ಲೈನ್ ಸ್ಥಿತಿಯನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "scheme_type": "insurance",
+      "eligibility": "All farmers - loanee and non-loanee",
+      "amount_range": "Premium: 2% for Kharif, 1.5% for Rabi",
+      "contact_info": "1800-180-1551",
+      "website": "https://pmfby.gov.in",
+      "active": true,
+      "state": "national",
+      "translations": {
+        "en": {
+          "scheme_name": "PMFBY (Pradhan Mantri Fasal Bima Yojana)",
+          "description": "PMFBY provides comprehensive insurance coverage against crop loss due to natural calamities, pests, and diseases. The scheme ensures financial stability for farmers in case of crop failure.",
+          "benefits": "Coverage for pre-sowing to post-harvest losses. Low premium rates (2% for Kharif, 1.5% for Rabi, 5% for horticulture crops). Rest of premium paid by government. Claims settled within 2 months. Protection against natural disasters, pests, and diseases.",
+          "application_process": "1. Visit PMFBY portal: pmfby.gov.in or nearest bank/CSC\n2. Select 'Farmer Application'\n3. Enter farmer details and bank account\n4. Provide land and crop details\n5. Pay nominal premium amount\n6. Receive policy document on registered mobile\n7. In case of crop loss, report within 72 hours\n8. Claims processed automatically based on crop cutting experiments"
+        },
+        "hi": {
+          "scheme_name": "पीएमएफबीवाई (प्रधानमंत्री फसल बीमा योजना)",
+          "description": "पीएमएफबीवाई प्राकृतिक आपदाओं, कीटों और बीमारियों के कारण फसल नुकसान के खिलाफ व्यापक बीमा कवरेज प्रदान करता है। यह योजना फसल विफलता के मामले में किसानों के लिए वित्तीय स्थिरता सुनिश्चित करती है।",
+          "benefits": "बुवाई पूर्व से कटाई के बाद के नुकसान के लिए कवरेज। कम प्रीमियम दरें (खरीफ के लिए 2%, रबी के लिए 1.5%, बागवानी फसलों के लिए 5%)। शेष प्रीमियम सरकार द्वारा भुगतान। 2 महीने के भीतर दावों का निपटान। प्राकृतिक आपदाओं, कीटों और बीमारियों से सुरक्षा।",
+          "application_process": "1. पीएमएफबीवाई पोर्टल पर जाएं: pmfby.gov.in या निकटतम बैंक/सीएससी\n2. 'किसान आवेदन' चुनें\n3. किसान विवरण और बैंक खाता दर्ज करें\n4. भूमि और फसल विवरण प्रदान करें\n5. नाममात्र प्रीमियम राशि का भुगतान करें\n6. पंजीकृत मोबाइल पर पॉलिसी दस्तावेज़ प्राप्त करें\n7. फसल नुकसान के मामले में, 72 घंटे के भीतर रिपोर्ट करें\n8. फसल काटने के प्रयोगों के आधार पर दावों की स्वचालित रूप से प्रक्रिया की जाती है"
+        },
+        "mr": {
+          "scheme_name": "पीएमएफबीवाय (प्रधानमंत्री फसल विमा योजना)",
+          "description": "पीएमएफबीवाय नैसर्गिक आपत्ती, कीड आणि रोगामुळे होणाऱ्या पीक नुकसानीविरुद्ध सर्वसमावेशक विमा संरक्षण प्रदान करते. ही योजना पीक अपयशाच्या बाबतीत शेतकऱ्यांसाठी आर्थिक स्थिरता सुनिश्चित करते.",
+          "benefits": "पेरणीपूर्व ते कापणीनंतरच्या नुकसानीसाठी संरक्षण. कमी प्रीमियम दर (खरीप 2%, रब्बी 1.5%, फलोत्पादन पिके 5%). उर्वरित प्रीमियम सरकारद्वारे भरले जाते. 2 महिन्यांत दाव्यांचा निपटारा. नैसर्गिक आपत्ती, कीड आणि रोगांपासून संरक्षण.",
+          "application_process": "1. पीएमएफबीवाय पोर्टलला भेट द्या: pmfby.gov.in किंवा जवळची बँक/सीएससी\n2. 'शेतकरी अर्ज' निवडा\n3. शेतकरी तपशील आणि बँक खाते प्रविष्ट करा\n4. जमीन आणि पीक तपशील प्रदान करा\n5. नाममात्र प्रीमियम रक्कम भरा\n6. नोंदणीकृत मोबाइलवर पॉलिसी दस्तऐवज प्राप्त करा\n7. पीक नुकसानाच्या बाबतीत, 72 तासांच्या आत अहवाल द्या\n8. पीक कापणी प्रयोगांवर आधारित स्वयंचलितपणे दाव्यांवर प्रक्रिया केली जाते"
+        },
+        "kn": {
+          "scheme_name": "ಪಿಎಮ್‌ಎಫ್‌ಬಿವೈ (ಪ್ರಧಾನಮಂತ್ರಿ ಫಸಲ್ ಬೀಮಾ ಯೋಜನ)",
+          "description": "ಪಿಎಮ್‌ಎಫ್‌ಬಿವೈ ನೈಸರ್ಗಿಕ ವಿಕೋಪಗಳು, ಕೀಟಗಳು ಮತ್ತು ರೋಗಗಳ ಕಾರಣದಿಂದಾಗಿ ಬೆಳೆ ನಷ್ಟದ ವಿರುದ್ಧ ಸಮಗ್ರ ವಿಮಾ ರಕ್ಷಣೆಯನ್ನು ನೀಡುತ್ತದೆ. ಈ ಯೋಜನೆಯು ಬೆಳೆ ವೈಫಲ್ಯದ ಸಂದರ್ಭದಲ್ಲಿ ರೈತರಿಗೆ ಆರ್ಥಿಕ ಸ್ಥಿರತೆಯನ್ನು ಖಾತ್ರಿಪಡಿಸುತ್ತದೆ.",
+          "benefits": "ಬಿತ್ತನೆ-ಪೂರ್ವದಿಂದ ಕೊಯ್ಲು-ನಂತರದ ನಷ್ಟಗಳಿಗೆ ರಕ್ಷಣೆ. ಕಡಿಮೆ ಪ್ರೀಮಿಯಂ ದರಗಳು (ಖರೀಫ್‌ಗೆ 2%, ರಬಿಗೆ 1.5%, ತೋಟಗಾರಿಕೆ ಬೆಳೆಗಳಿಗೆ 5%). ಉಳಿದ ಪ್ರೀಮಿಯಂ ಸರ್ಕಾರದಿಂದ ಪಾವತಿಸಲಾಗುತ್ತದೆ. 2 ತಿಂಗಳೊಳಗೆ ಹಕ್ಕುಗಳನ್ನು ಇತ್ಯರ್ಥಗೊಳಿಸಲಾಗುತ್ತದೆ. ನೈಸರ್ಗಿಕ ವಿಕೋಪಗಳು, ಕೀಟಗಳು ಮತ್ತು ರೋಗಗಳ ವಿರುದ್ಧ ರಕ್ಷಣೆ.",
+          "application_process": "1. ಪಿಎಮ್‌ಎಫ್‌ಬಿವೈ ಪೋರ್ಟಲ್‌ಗೆ ಭೇಟಿ ನೀಡಿ: pmfby.gov.in ಅಥವಾ ಹತ್ತಿರದ ಬ್ಯಾಂಕ್/ಸಿಎಸ್‌ಸಿ\n2. 'ರೈತ ಅರ್ಜಿ' ಆಯ್ಕೆಮಾಡಿ\n3. ರೈತ ವಿವರಗಳು ಮತ್ತು ಬ್ಯಾಂಕ್ ಖಾತೆ ನಮೂದಿಸಿ\n4. ಭೂಮಿ ಮತ್ತು ಬೆಳೆ ವಿವರಗಳನ್ನು ಒದಗಿಸಿ\n5. ಸಣ್ಣ ಪ್ರೀಮಿಯಂ ಮೊತ್ತವನ್ನು ಪಾವತಿಸಿ\n6. ನೋಂದಾಯಿತ ಮೊಬೈಲ್‌ನಲ್ಲಿ ಪಾಲಿಸಿ ದಾಖಲೆಯನ್ನು ಸ್ವೀಕರಿಸಿ\n7. ಬೆಳೆ ನಷ್ಟದ ಸಂದರ್ಭದಲ್ಲಿ, 72 ಗಂಟೆಗಳೊಳಗೆ ವರದಿ ಮಾಡಿ\n8. ಬೆಳೆ ಕತ್ತರಿಸುವ ಪ್ರಯೋಗಗಳ ಆಧಾರದ ಮೇಲೆ ಹಕ್ಕುಗಳನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲಾಗುತ್ತದೆ"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "scheme_type": "loan",
+      "eligibility": "Small and marginal farmers",
+      "amount_range": "Up to ₹3 lakh",
+      "contact_info": "Local banks and cooperative societies",
+      "website": "https://www.nabard.org",
+      "active": true,
+      "state": "national",
+      "translations": {
+        "en": {
+          "scheme_name": "Kisan Credit Card (KCC)",
+          "description": "Kisan Credit Card scheme provides adequate and timely credit support to farmers for their cultivation needs including purchase of inputs, maintenance of farm assets, and post-harvest expenses. Also provides insurance coverage.",
+          "benefits": "Credit limit up to ₹3 lakh at concessional interest rate of 4% per annum. Simple documentation. Flexible repayment. Valid for 5 years. Insurance coverage of ₹50,000 for accidental death. No collateral required for loans up to ₹1.6 lakh.",
+          "application_process": "1. Visit nearest bank branch or cooperative society\n2. Fill KCC application form\n3. Submit land ownership documents\n4. Provide identity proof (Aadhaar) and address proof\n5. Bank verifies documents and land records\n6. Credit limit sanctioned based on land holding and cropping pattern\n7. Receive KCC card within 15 days\n8. Withdraw cash or make purchases at input dealers"
+        },
+        "hi": {
+          "scheme_name": "किसान क्रेडिट कार्ड (केसीसी)",
+          "description": "किसान क्रेडिट कार्ड योजना किसानों को उनकी खेती की जरूरतों के लिए पर्याप्त और समय पर ऋण सहायता प्रदान करती है जिसमें इनपुट की खरीद, कृषि संपत्तियों का रखरखाव और कटाई के बाद के खर्च शामिल हैं। बीमा कवरेज भी प्रदान करता है।",
+          "benefits": "प्रति वर्ष 4% की रियायती ब्याज दर पर ₹3 लाख तक की ऋण सीमा। सरल दस्तावेज़ीकरण। लचीली पुनर्भुगतान। 5 साल के लिए वैध। आकस्मिक मृत्यु के लिए ₹50,000 का बीमा कवरेज। ₹1.6 लाख तक के ऋण के लिए संपार्श्विक की आवश्यकता नहीं।",
+          "application_process": "1. निकटतम बैंक शाखा या सहकारी समिति पर जाएं\n2. केसीसी आवेदन पत्र भरें\n3. भूमि स्वामित्व दस्तावेज जमा करें\n4. पहचान प्रमाण (आधार) और पता प्रमाण प्रदान करें\n5. बैंक दस्तावेजों और भूमि रिकॉर्ड की जांच करता है\n6. भूमि धारण और फसल पैटर्न के आधार पर ऋण सीमा स्वीकृत\n7. 15 दिनों के भीतर केसीसी कार्ड प्राप्त करें\n8. नकद निकालें या इनपुट डीलरों पर खरीदारी करें"
+        },
+        "mr": {
+          "scheme_name": "किसान क्रेडिट कार्ड (केसीसी)",
+          "description": "किसान क्रेडिट कार्ड योजना शेतकऱ्यांना त्यांच्या लागवडीच्या गरजांसाठी पुरेसा आणि वेळेवर कर्ज पाठिंबा प्रदान करते ज्यात निविष्ठा खरेदी, शेती मालमत्तेची देखभाल आणि कापणीनंतरचे खर्च यांचा समावेश आहे. विमा संरक्षण देखील प्रदान करते.",
+          "benefits": "दरवर्षी 4% सवलतीच्या व्याज दराने ₹3 लाखांपर्यंत कर्ज मर्यादा. सोपे दस्तऐवजीकरण. लवचिक परतफेड. 5 वर्षांसाठी वैध. अपघाती मृत्यूसाठी ₹50,000 चे विमा संरक्षण. ₹1.6 लाखांपर्यंतच्या कर्जासाठी तारण आवश्यक नाही.",
+          "application_process": "1. जवळच्या बँक शाखेत किंवा सहकारी संस्थेला भेट द्या\n2. केसीसी अर्ज फॉर्म भरा\n3. जमीन मालकी दस्तऐवज सबमिट करा\n4. ओळखपत्र (आधार) आणि पत्ता पुरावा प्रदान करा\n5. बँक दस्तऐवज आणि जमीन नोंदींची पडताळणी करते\n6. जमीन धारणा आणि पीक पद्धतीवर आधारित कर्ज मर्यादा मंजूर\n7. 15 दिवसांत केसीसी कार्ड प्राप्त करा\n8. रोख काढा किंवा इनपुट डीलर्सकडे खरेदी करा"
+        },
+        "kn": {
+          "scheme_name": "ಕಿಸಾನ್ ಕ್ರೆಡಿಟ್ ಕಾರ್ಡ್ (ಕೆಸಿಸಿ)",
+          "description": "ಕಿಸಾನ್ ಕ್ರೆಡಿಟ್ ಕಾರ್ಡ್ ಯೋಜನೆಯು ರೈತರಿಗೆ ಅವರ ಕೃಷಿ ಅಗತ್ಯಗಳಿಗೆ ಸಾಕಷ್ಟು ಮತ್ತು ಸಕಾಲಿಕ ಸಾಲದ ಬೆಂಬಲವನ್ನು ನೀಡುತ್ತದೆ, ಇದರಲ್ಲಿ ಒಳಹರಿವುಗಳ ಖರೀದಿ, ಕೃಷಿ ಆಸ್ತಿಗಳ ನಿರ್ವಹಣೆ ಮತ್ತು ಕೊಯ್ಲು ನಂತರದ ವೆಚ್ಚಗಳು ಸೇರಿವೆ. ವಿಮಾ ರಕ್ಷಣೆಯನ್ನು ಸಹ ನೀಡುತ್ತದೆ.",
+          "benefits": "ವರ್ಷಕ್ಕೆ 4% ರಿಯಾಯಿತಿ ಬಡ್ಡಿ ದರದಲ್ಲಿ ₹3 ಲಕ್ಷದವರೆಗೆ ಸಾಲದ ಮಿತಿ. ಸರಳ ದಾಖಲಾತಿ. ಹೊಂದಿಕೊಳ್ಳುವ ಮರುಪಾವತಿ. 5 ವರ್ಷಗಳವರೆಗೆ ಮಾನ್ಯ. ಆಕಸ್ಮಿಕ ಸಾವಿಗೆ ₹50,000 ರ ವಿಮಾ ರಕ್ಷಣೆ. ₹1.6 ಲಕ್ಷದವರೆಗಿನ ಸಾಲಗಳಿಗೆ ಯಾವುದೇ ಮೇಲಾಧಾರದ ಅಗತ್ಯವಿಲ್ಲ.",
+          "application_process": "1. ಹತ್ತಿರದ ಬ್ಯಾಂಕ್ ಶಾಖೆ ಅಥವಾ ಸಹಕಾರ ಸಂಘಕ್ಕೆ ಭೇಟಿ ನೀಡಿ\n2. ಕೆಸಿಸಿ ಅರ್ಜಿ ನಮೂನೆಯನ್ನು ಭರ್ತಿ ಮಾಡಿ\n3. ಭೂ ಮಾಲೀಕತ್ವದ ದಾಖಲೆಗಳನ್ನು ಸಲ್ಲಿಸಿ\n4. ಗುರುತಿನ ಪುರಾವೆ (ಆಧಾರ್) ಮತ್ತು ವಿಳಾಸ ಪುರಾವೆ ಒದಗಿಸಿ\n5. ಬ್ಯಾಂಕ್ ದಾಖಲೆಗಳು ಮತ್ತು ಭೂ ದಾಖಲೆಗಳನ್ನು ಪರಿಶೀಲಿಸುತ್ತದೆ\n6. ಭೂ ಹಿಡುವಳಿ ಮತ್ತು ಬೆಳೆ ಮಾದರಿಯ ಆಧಾರದ ಮೇಲೆ ಸಾಲದ ಮಿತಿಯನ್ನು ಮಂಜೂರು ಮಾಡಲಾಗುತ್ತದೆ\n7. 15 ದಿನಗಳೊಳಗೆ ಕೆಸಿಸಿ ಕಾರ್ಡ್ ಸ್ವೀಕರಿಸಿ\n8. ನಗದು ಹಿಂಪಡೆಯಿರಿ ಅಥವಾ ಒಳಹರಿವು ವಿತರಕರಲ್ಲಿ ಖರೀದಿಗಳನ್ನು ಮಾಡಿ"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "scheme_type": "subsidy",
+      "eligibility": "Farmers with irrigation facilities",
+      "amount_range": "90% subsidy for small farmers",
+      "contact_info": "State Agriculture Department",
+      "website": "https://pmksy.gov.in",
+      "active": true,
+      "state": "national",
+      "translations": {
+        "en": {
+          "scheme_name": "PMKSY (Pradhan Mantri Krishi Sinchayee Yojana)",
+          "description": "PMKSY aims to enhance water use efficiency, expand cultivable area under irrigation, and provide end-to-end solutions in irrigation supply chain. Focuses on 'Per Drop More Crop' through micro-irrigation.",
+          "benefits": "Financial assistance for drip and sprinkler irrigation systems. 55% subsidy for general category farmers. 90% subsidy for small and marginal farmers. Technical support for installation. Training on efficient water usage. Increased crop yield with less water.",
+          "application_process": "1. Visit State Agriculture Department website\n2. Download and fill PMKSY application form\n3. Attach land documents and irrigation source details\n4. Submit to District Agriculture Office\n5. Officials conduct field inspection\n6. Subsidy approved and beneficiary list published\n7. Purchase equipment from empaneled suppliers\n8. Installation completed and subsidy released to farmer's account"
+        },
+        "hi": {
+          "scheme_name": "पीएमकेएसवाई (प्रधानमंत्री कृषि सिंचाई योजना)",
+          "description": "पीएमकेएसवाई का उद्देश्य जल उपयोग दक्षता बढ़ाना, सिंचाई के तहत खेती योग्य क्षेत्र का विस्तार करना और सिंचाई आपूर्ति श्रृंखला में एंड-टू-एंड समाधान प्रदान करना है। सूक्ष्म सिंचाई के माध्यम से 'प्रति बूंद अधिक फसल' पर ध्यान केंद्रित करता है।",
+          "benefits": "ड्रिप और स्प्रिंकलर सिंचाई प्रणालियों के लिए वित्तीय सहायता। सामान्य श्रेणी के किसानों के लिए 55% सब्सिडी। छोटे और सीमांत किसानों के लिए 90% सब्सिडी। स्थापना के लिए तकनीकी सहायता। कुशल जल उपयोग पर प्रशिक्षण। कम पानी से बढ़ी हुई फसल उपज।",
+          "application_process": "1. राज्य कृषि विभाग की वेबसाइट पर जाएं\n2. पीएमकेएसवाई आवेदन पत्र डाउनलोड और भरें\n3. भूमि दस्तावेज और सिंचाई स्रोत विवरण संलग्न करें\n4. जिला कृषि कार्यालय में जमा करें\n5. अधिकारी फील्ड निरीक्षण करते हैं\n6. सब्सिडी स्वीकृत और लाभार्थी सूची प्रकाशित\n7. सूचीबद्ध आपूर्तिकर्ताओं से उपकरण खरीदें\n8. स्थापना पूर्ण और सब्सिडी किसान के खाते में जारी"
+        },
+        "mr": {
+          "scheme_name": "पीएमकेएसवाय (प्रधानमंत्री कृषी सिंचाई योजना)",
+          "description": "पीएमकेएसवायचे उद्दिष्ट पाणी वापर कार्यक्षमता वाढवणे, सिंचन अंतर्गत लागवडीयोग्य क्षेत्राचा विस्तार करणे आणि सिंचन पुरवठा साखळीत एंड-टू-एंड उपाय प्रदान करणे आहे. सूक्ष्म सिंचनाद्वारे 'प्रति थेंब अधिक पीक' यावर लक्ष केंद्रित करते.",
+          "benefits": "ठिबक आणि स्प्रिंकलर सिंचन प्रणालीसाठी आर्थिक सहाय्य. सामान्य वर्गातील शेतकऱ्यांसाठी 55% सवलत. लघु आणि सीमांत शेतकऱ्यांसाठी 90% सवलत. स्थापनेसाठी तांत्रिक सहाय्य. कार्यक्षम पाणी वापरावर प्रशिक्षण. कमी पाण्यात वाढलेले पीक उत्पादन.",
+          "application_process": "1. राज्य कृषी विभागाच्या वेबसाइटला भेट द्या\n2. पीएमकेएसवाय अर्ज फॉर्म डाउनलोड आणि भरा\n3. जमीन दस्तऐवज आणि सिंचन स्रोत तपशील जोडा\n4. जिल्हा कृषी कार्यालयात सबमिट करा\n5. अधिकारी फील्ड तपासणी करतात\n6. सवलत मंजूर आणि लाभार्थी यादी प्रकाशित\n7. सूचीबद्ध पुरवठादारांकडून उपकरणे खरेदी करा\n8. स्थापना पूर्ण आणि सवलत शेतकऱ्याच्या खात्यात सोडली"
+        },
+        "kn": {
+          "scheme_name": "ಪಿಎಮ್‌ಕೆಎಸ್‌ವೈ (ಪ್ರಧಾನಮಂತ್ರಿ ಕೃಷಿ ಸಿಂಚಯೀ ಯೋಜನ)",
+          "description": "ಪಿಎಮ್‌ಕೆಎಸ್‌ವೈ ನೀರಿನ ಬಳಕೆಯ ದಕ್ಷತೆಯನ್ನು ಹೆಚ್ಚಿಸುವುದು, ನೀರಾವರಿ ಅಡಿಯಲ್ಲಿ ಕೃಷಿಯೋಗ್ಯ ಪ್ರದೇಶವನ್ನು ವಿಸ್ತರಿಸುವುದು ಮತ್ತು ನೀರಾವರಿ ಪೂರೈಕೆ ಸರಪಳಿಯಲ್ಲಿ ಅಂತ್ಯದಿಂದ ಅಂತ್ಯದವರೆಗಿನ ಪರಿಹಾರಗಳನ್ನು ಒದಗಿಸುವುದು ಗುರಿಯಾಗಿದೆ. ಸೂಕ್ಷ್ಮ ನೀರಾವರಿ ಮೂಲಕ 'ಪ್ರತಿ ಹನಿ ಹೆಚ್ಚು ಬೆಳೆ' ಮೇಲೆ ಕೇಂದ್ರೀಕರಿಸುತ್ತದೆ.",
+          "benefits": "ಹನಿ ಮತ್ತು ಸ್ಪ್ರಿಂಕ್ಲರ್ ನೀರಾವರಿ ವ್ಯವಸ್ಥೆಗಳಿಗೆ ಹಣಕಾಸಿನ ಸಹಾಯ. ಸಾಮಾನ್ಯ ವರ್ಗದ ರೈತರಿಗೆ 55% ಸಬ್ಸಿಡಿ. ಸಣ್ಣ ಮತ್ತು ಸೀಮಾಂತ ರೈತರಿಗೆ 90% ಸಬ್ಸಿಡಿ. ಅನುಸ್ಥಾಪನೆಗೆ ತಾಂತ್ರಿಕ ಬೆಂಬಲ. ಸಮರ್ಥ ನೀರಿನ ಬಳಕೆಯ ಕುರಿತು ತರಬೇತಿ. ಕಡಿಮೆ ನೀರಿನಿಂದ ಹೆಚ್ಚಿದ ಬೆಳೆ ಇಳುವರಿ.",
+          "application_process": "1. ರಾಜ್ಯ ಕೃಷಿ ಇಲಾಖೆಯ ವೆಬ್‌ಸೈಟ್‌ಗೆ ಭೇಟಿ ನೀಡಿ\n2. ಪಿಎಂಕೆಎಸ್‌ವೈ ಅರ್ಜಿ ನಮೂನೆಯನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ ಮತ್ತು ಭರ್ತಿ ಮಾಡಿ\n3. ಭೂಮಿ ದಾಖಲೆಗಳು ಮತ್ತು ನೀರಾವರಿ ಮೂಲ ವಿವರಗಳನ್ನು ಲಗತ್ತಿಸಿ\n4. ಜಿಲ್ಲಾ ಕೃಷಿ ಕಛೇರಿಗೆ ಸಲ್ಲಿಸಿ\n5. ಅಧಿಕಾರಿಗಳು ಕ್ಷೇತ್ರ ತಪಾಸಣೆ ನಡೆಸುತ್ತಾರೆ\n6. ಸಬ್ಸಿಡಿ ಅನುಮೋದನೆ ಮತ್ತು ಫಲಾನುಭವಿಗಳ ಪಟ್ಟಿ ಪ್ರಕಟಣೆ\n7. ಸೂಚಿಯಲ್ಲಿರುವ ಪೂರೈಕೆದಾರರಿಂದ ಉಪಕರಣಗಳನ್ನು ಖರೀದಿಸಿ\n8. ಅನುಸ್ಥಾಪನೆ ಪೂರ್ಣಗೊಂಡಿದೆ ಮತ್ತು ಸಬ್ಸಿಡಿಯನ್ನು ರೈತರ ಖಾತೆಗೆ ಬಿಡುಗಡೆ ಮಾಡಲಾಗಿದೆ"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "scheme_type": "grant",
+      "eligibility": "Women farmers and farmer groups",
+      "amount_range": "Up to ₹1.5 lakh per unit",
+      "contact_info": "District Horticulture Office",
+      "website": "https://midh.gov.in",
+      "active": true,
+      "state": "national",
+      "translations": {
+        "en": {
+          "scheme_name": "MIDH (Mission for Integrated Development of Horticulture)",
+          "description": "MIDH provides holistic growth of horticulture sector covering fruits, vegetables, root & tuber crops, mushrooms, spices, flowers, aromatic plants, coconut, cashew, and cocoa. Special focus on women empowerment and farmer producer organizations.",
+          "benefits": "Financial assistance for setting up nurseries, protected cultivation, mechanization, and post-harvest management. Grants up to ₹1.5 lakh per unit for greenhouses. Subsidy for micro-irrigation and organic farming. Training and capacity building support.",
+          "application_process": "1. Contact District Horticulture Officer\n2. Attend awareness camp and training program\n3. Submit project proposal with cost estimates\n4. Technical committee evaluates feasibility\n5. Approved projects receive first installment\n6. Complete infrastructure development\n7. Submit completion certificate with photos\n8. Final inspection and release of remaining subsidy amount"
+        },
+        "hi": {
+          "scheme_name": "एमआईडीएच (बागवानी के एकीकृत विकास के लिए मिशन)",
+          "description": "एमआईडीएच फल, सब्जियां, जड़ और कंद फसलें, मशरूम, मसाले, फूल, सुगंधित पौधे, नारियल, काजू और कोको को कवर करते हुए बागवानी क्षेत्र के समग्र विकास प्रदान करता है। महिला सशक्तिकरण और किसान उत्पादक संगठनों पर विशेष ध्यान।",
+          "benefits": "नर्सरी स्थापित करने, संरक्षित खेती, यंत्रीकरण और कटाई के बाद प्रबंधन के लिए वित्तीय सहायता। ग्रीनहाउस के लिए प्रति इकाई ₹1.5 लाख तक अनुदान। सूक्ष्म सिंचाई और जैविक खेती के लिए सब्सिडी। प्रशिक्षण और क्षमता निर्माण सहायता।",
+          "application_process": "1. जिला बागवानी अधिकारी से संपर्क करें\n2. जागरूकता शिविर और प्रशिक्षण कार्यक्रम में भाग लें\n3. लागत अनुमान के साथ परियोजना प्रस्ताव जमा करें\n4. तकनीकी समिति व्यवहार्यता का मूल्यांकन करती है\n5. स्वीकृत परियोजनाओं को पहली किस्त मिलती है\n6. बुनियादी ढांचे का विकास पूर्ण करें\n7. फोटो के साथ पूर्णता प्रमाण पत्र जमा करें\n8. अंतिम निरीक्षण और शेष सब्सिडी राशि जारी"
+        },
+        "mr": {
+          "scheme_name": "एमआयडीएच (फलोत्पादनाच्या एकात्मिक विकासासाठी मिशन)",
+          "description": "एमआयडीएच फळे, भाज्या, मुळे आणि कंद पिके, मशरूम, मसाले, फुले, सुगंधी वनस्पती, नारळ, काजू आणि कोको यांचा समावेश करून फलोत्पादन क्षेत्राची सर्वांगीण वाढ प्रदान करते. महिला सबलीकरण आणि शेतकरी उत्पादक संघटनांवर विशेष भर.",
+          "benefits": "रोपवाटिका स्थापन, संरक्षित लागवड, यांत्रिकीकरण आणि कापणीनंतर व्यवस्थापनासाठी आर्थिक सहाय्य. हरितगृहांसाठी प्रति युनिट ₹1.5 लाखांपर्यंत अनुदान. सूक्ष्म सिंचन आणि सेंद्रिय शेतीसाठी सवलत. प्रशिक्षण आणि क्षमता बांधणी समर्थन.",
+          "application_process": "1. जिल्हा फलोत्पादन अधिकाऱ्यांशी संपर्क साधा\n2. जागरूकता शिबिर आणि प्रशिक्षण कार्यक्रमात सहभागी व्हा\n3. खर्च अंदाजासह प्रकल्प प्रस्ताव सबमिट करा\n4. तांत्रिक समिती व्यवहार्यतेचे मूल्यमापन करते\n5. मंजूर प्रकल्पांना पहिला हप्ता मिळतो\n6. पायाभूत सुविधा विकास पूर्ण करा\n7. फोटोसह पूर्णता प्रमाणपत्र सबमिट करा\n8. अंतिम तपासणी आणि उर्वरित सवलत रक्कम सोडणे"
+        },
+        "kn": {
+          "scheme_name": "ಎಂಐಡಿಹೆಚ್ (ತೋಟಗಾರಿಕೆಯ ಸಮಗ್ರ ಅಭಿವೃದ್ಧಿಗಾಗಿ ಮಿಷನ್)",
+          "description": "ಎಂಐಡಿಹೆಚ್ ಹಣ್ಣುಗಳು, ತರಕಾರಿಗಳು, ಬೇರು ಮತ್ತು ಗೆಡ್ಡೆ ಬೆಳೆಗಳು, ಅಣಬೆಗಳು, ಮಸಾಲೆಗಳು, ಹೂವುಗಳು, ಸುವಾಸನೆಯ ಸಸ್ಯಗಳು, ತೆಂಗಿನಕಾಯಿ, ಗೋಡಂಬಿ ಮತ್ತು ಕೋಕೋವನ್ನು ಒಳಗೊಂಡ ತೋಟಗಾರಿಕೆ ವಲಯದ ಸಮಗ್ರ ಬೆಳವಣಿಗೆಯನ್ನು ಒದಗಿಸುತ್ತದೆ. ಮಹಿಳಾ ಸಬಲೀಕರಣ ಮತ್ತು ರೈತ ಉತ್ಪಾದಕ ಸಂಸ್ಥೆಗಳ ಮೇಲೆ ವಿಶೇಷ ಗಮನ.",
+          "benefits": "ನರ್ಸರಿಗಳನ್ನು ಸ್ಥಾಪಿಸಲು, ಸಂರಕ್ಷಿತ ಕೃಷಿ, ಯಾಂತ್ರೀಕರಣ ಮತ್ತು ಕೊಯ್ಲು ನಂತರದ ನಿರ್ವಹಣೆಗೆ ಹಣಕಾಸಿನ ಸಹಾಯ. ಹಸಿರುಮನೆಗಳಿಗೆ ಪ್ರತಿ ಘಟಕಕ್ಕೆ ₹1.5 ಲಕ್ಷದವರೆಗೆ ಅನುದಾನ. ಸೂಕ್ಷ್ಮ ನೀರಾವರಿ ಮತ್ತು ಸಾವಯವ ಕೃಷಿಗೆ ಸಬ್ಸಿಡಿ. ತರಬೇತಿ ಮತ್ತು ಸಾಮರ್ಥ್ಯ ವೃದ್ಧಿ ಬೆಂಬಲ.",
+          "application_process": "1. ಜಿಲ್ಲಾ ತೋಟಗಾರಿಕೆ ಅಧಿಕಾರಿಯನ್ನು ಸಂಪರ್ಕಿಸಿ\n2. ಜಾಗೃತಿ ಶಿಬಿರ ಮತ್ತು ತರಬೇತಿ ಕಾರ್ಯಕ್ರಮಕ್ಕೆ ಹಾಜರಾಗಿ\n3. ವೆಚ್ಚದ ಅಂದಾಜುಗಳೊಂದಿಗೆ ಯೋಜನಾ ಪ್ರಸ್ತಾವನೆ ಸಲ್ಲಿಸಿ\n4. ತಾಂತ್ರಿಕ ಸಮಿತಿಯು ಕಾರ್ಯಸಾಧ್ಯತೆಯನ್ನು ಮೌಲ್ಯಮಾಪನ ಮಾಡುತ್ತದೆ\n5. ಅನುಮೋದಿತ ಯೋಜನೆಗಳು ಮೊದಲ ಕಂತನ್ನು ಸ್ವೀಕರಿಸುತ್ತವೆ\n6. ಮೂಲಸೌಕರ್ಯ ಅಭಿವೃದ್ಧಿಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಿ\n7. ಫೋಟೋಗಳೊಂದಿಗೆ ಪೂರ್ಣಗೊಳಿಸುವಿಕೆಯ ಪ್ರಮಾಣಪತ್ರವನ್ನು ಸಲ್ಲಿಸಿ\n8. ಅಂತಿಮ ತಪಾಸಣೆ ಮತ್ತು ಉಳಿದ ಸಬ್ಸಿಡಿ ಮೊತ್ತದ ಬಿಡುಗಡೆ"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "scheme_type": "loan",
+      "eligibility": "Farmers for equipment and machinery",
+      "amount_range": "Up to ₹10 lakh",
+      "contact_info": "Nationalized banks and RRBs",
+      "website": "https://nafed.india.gov.in",
+      "active": true,
+      "state": "national",
+      "translations": {
+        "en": {
+          "scheme_name": "Agriculture Infrastructure Fund",
+          "description": "This scheme provides medium to long term debt financing for investment in viable projects for post-harvest management infrastructure and community farming assets. Helps in building infrastructure related to storage, sorting, grading, and packaging.",
+          "benefits": "Loan up to ₹10 lakh with 3% interest subvention. Additional 2% interest subvention on prompt repayment. Moratorium period up to 2 years. Repayment period up to 6 years. Credit guarantee coverage for loans up to ₹2 crore.",
+          "application_process": "1. Prepare detailed project report with cost estimates\n2. Apply through participating banks or NABARD\n3. Submit business plan and financial projections\n4. Bank conducts technical and financial appraisal\n5. Loan sanctioned and agreement executed\n6. Amount disbursed in stages based on progress\n7. Complete project within stipulated time\n8. Start repayment as per schedule"
+        },
+        "hi": {
+          "scheme_name": "कृषि अवसंरचना कोष",
+          "description": "यह योजना कटाई के बाद प्रबंधन बुनियादी ढांचे और सामुदायिक कृषि संपत्तियों के लिए व्यवहार्य परियोजनाओं में निवेश के लिए मध्यम से दीर्घकालिक ऋण वित्तपोषण प्रदान करती है। भंडारण, छंटाई, ग्रेडिंग और पैकेजिंग से संबंधित बुनियादी ढांचे के निर्माण में मदद करता है।",
+          "benefits": "3% ब्याज सब्वेंशन के साथ ₹10 लाख तक का ऋण। समय पर पुनर्भुगतान पर अतिरिक्त 2% ब्याज सब्वेंशन। 2 साल तक की अधिस्थगन अवधि। 6 साल तक की पुनर्भुगतान अवधि। ₹2 करोड़ तक के ऋण के लिए क्रेडिट गारंटी कवरेज।",
+          "application_process": "1. लागत अनुमान के साथ विस्तृत परियोजना रिपोर्ट तैयार करें\n2. भाग लेने वाले बैंकों या नाबार्ड के माध्यम से आवेदन करें\n3. व्यवसाय योजना और वित्तीय अनुमान जमा करें\n4. बैंक तकनीकी और वित्तीय मूल्यांकन करता है\n5. ऋण स्वीकृत और समझौता निष्पादित\n6. प्रगति के आधार पर चरणों में राशि वितरित\n7. निर्धारित समय के भीतर परियोजना पूर्ण करें\n8. अनुसूची के अनुसार पुनर्भुगतान शुरू करें"
+        },
+        "mr": {
+          "scheme_name": "कृषी पायाभूत सुविधा निधी",
+          "description": "ही योजना कापणीनंतरच्या व्यवस्थापन पायाभूत सुविधा आणि सामुदायिक शेती मालमत्तेसाठी व्यवहार्य प्रकल्पांमध्ये गुंतवणुकीसाठी मध्यम ते दीर्घकालीन कर्ज वित्तपुरवठा प्रदान करते. साठवण, वर्गीकरण, श्रेणीकरण आणि पॅकेजिंगशी संबंधित पायाभूत सुविधा तयार करण्यात मदत करते.",
+          "benefits": "3% व्याज सबव्हेंशनसह ₹10 लाखांपर्यंत कर्ज. वेळेवर परतफेडीवर अतिरिक्त 2% व्याज सबव्हेंशन. 2 वर्षांपर्यंत स्थगिती कालावधी. 6 वर्षांपर्यंत परतफेड कालावधी. ₹2 कोटींपर्यंतच्या कर्जासाठी पत कॅरेंटी कव्हरेज.",
+          "application_process": "1. खर्च अंदाजासह तपशीलवार प्रकल्प अहवाल तयार करा\n2. सहभागी बँका किंवा नाबार्डद्वारे अर्ज करा\n3. व्यवसाय योजना आणि आर्थिक प्रक्षेपण सबमिट करा\n4. बँक तांत्रिक आणि आर्थिक मूल्यमापन करते\n5. कर्ज मंजूर आणि करार अंमलात\n6. प्रगतीच्या आधारे टप्प्याटप्प्याने रक्कम वितरित\n7. निर्धारित वेळेत प्रकल्प पूर्ण करा\n8. वेळापत्रकानुसार परतफेड सुरू करा"
+        },
+        "kn": {
+          "scheme_name": "ಕೃಷಿ ಮೂಲಸೌಕರ್ಯ ನಿಧಿ",
+          "description": "ಈ ಯೋಜನೆಯು ಕೊಯ್ಲು ನಂತರದ ನಿರ್ವಹಣಾ ಮೂಲಸೌಕರ್ಯ ಮತ್ತು ಸಮುದಾಯ ಕೃಷಿ ಆಸ್ತಿಗಳಿಗಾಗಿ ಕಾರ್ಯಸಾಧ್ಯವಾದ ಯೋಜನೆಗಳಲ್ಲಿ ಹೂಡಿಕೆಗಾಗಿ ಮಧ್ಯಮದಿಂದ ದೀರ್ಘಾವಧಿಯ ಸಾಲದ ಹಣಕಾಸು ಒದಗಿಸುತ್ತದೆ. ಸಂಗ್ರಹಣೆ, ವಿಂಗಡಣೆ, ಶ್ರೇಣೀಕರಣ ಮತ್ತು ಪ್ಯಾಕೇಜಿಂಗ್‌ಗೆ ಸಂಬಂಧಿಸಿದ ಮೂಲಸೌಕರ್ಯವನ್ನು ನಿರ್ಮಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.",
+          "benefits": "3% ಬಡ್ಡಿ ಸಬ್ವೆನ್ಷನ್‌ನೊಂದಿಗೆ ₹10 ಲಕ್ಷದವರೆಗೆ ಸಾಲ. ತ್ವರಿತ ಮರುಪಾವತಿಯ ಮೇಲೆ ಹೆಚ್ಚುವರಿ 2% ಬಡ್ಡಿ ಸಬ್ವೆನ್ಷನ್. 2 ವರ್ಷಗಳವರೆಗೆ ಮೊರಟೋರಿಯಂ ಅವಧಿ. 6 ವರ್ಷಗಳವರೆಗೆ ಮರುಪಾವತಿ ಅವಧಿ. ₹2 ಕೋಟಿಯವರೆಗಿನ ಸಾಲಗಳಿಗೆ ಕ್ರೆಡಿಟ್ ಗ್ಯಾರಂಟಿ ರಕ್ಷಣೆ.",
+          "application_process": "1. ವೆಚ್ಚದ ಅಂದಾಜುಗಳೊಂದಿಗೆ ವಿವರವಾದ ಯೋಜನಾ ವರದಿಯನ್ನು ತಯಾರಿಸಿ\n2. ಭಾಗವಹಿಸುವ ಬ್ಯಾಂಕುಗಳು ಅಥವಾ ನಾಬಾರ್ಡ್ ಮೂಲಕ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ\n3. ವ್ಯಾಪಾರ ಯೋಜನೆ ಮತ್ತು ಹಣಕಾಸಿನ ಪ್ರಕ್ಷೇಪಗಳನ್ನು ಸಲ್ಲಿಸಿ\n4. ಬ್ಯಾಂಕ್ ತಾಂತ್ರಿಕ ಮತ್ತು ಹಣಕಾಸಿನ ಮೌಲ್ಯಮಾಪನವನ್ನು ನಡೆಸುತ್ತದೆ\n5. ಸಾಲ ಮಂಜೂರಾತಿ ಮತ್ತು ಒಪ್ಪಂದ ನಿರ್ವಹಣೆ\n6. ಪ್ರಗತಿಯ ಆಧಾರದ ಮೇಲೆ ಹಂತಗಳಲ್ಲಿ ಮೊತ್ತ ವಿತರಣೆ\n7. ನಿಗದಿತ ಸಮಯದೊಳಗೆ ಯೋಜನೆಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಿ\n8. ವೇಳಾಪಟ್ಟಿಯ ಪ್ರಕಾರ ಮರುಪಾವತಿ ಪ್ರಾರಂಭಿಸಿ"
+        }
+      }
+    }
+  ]
+}

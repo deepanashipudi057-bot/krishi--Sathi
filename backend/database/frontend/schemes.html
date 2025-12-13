@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Schemes - Krishi Sathi</title>
+    <link rel="stylesheet" href="assets/css/category.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <style>
+        /* Attractive Presentation Enhancements */
+        .schemes-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .schemes-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+            animation: float 20s infinite linear;
+        }
+        @keyframes float {
+            0% { transform: translateX(-100px); }
+            100% { transform: translateX(100px); }
+        }
+        .page-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease-out;
+        }
+        .page-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .filter-bar {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .filter-bar select {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 25px;
+            background: white;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        .filter-bar select:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+        .scheme-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .scheme-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+        }
+        .scheme-badge {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            z-index: 2;
+        }
+        .card-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            position: relative;
+        }
+        .card-header h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .scheme-type {
+            background: rgba(255,255,255,0.2);
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        .scheme-highlight {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin: -10px -10px 20px -10px;
+        }
+        .amount {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        .installments {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        .scheme-section {
+            margin-bottom: 20px;
+        }
+        .scheme-section h4 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        .scheme-section ul, .scheme-section ol {
+            padding-left: 20px;
+        }
+        .scheme-section li {
+            margin-bottom: 5px;
+            line-height: 1.5;
+        }
+        .scheme-contact {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .scheme-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .btn-primary, .btn-secondary {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+        .btn-secondary {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(245, 87, 108, 0.4);
+        }
+        .voice-assistant-section {
+            text-align: center;
+            margin-top: 50px;
+            padding: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            color: white;
+        }
+        .voice-btn {
+            background: white;
+            color: #667eea;
+            border: none;
+            padding: 20px 40px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .voice-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .pulse {
+            width: 20px;
+            height: 20px;
+            background: #ff6b6b;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.7; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .mic-icon {
+            font-size: 1.5rem;
+        }
+        .voice-status {
+            margin-top: 20px;
+            font-size: 1.1rem;
+            min-height: 30px;
+        }
+        @media (max-width: 768px) {
+            .page-title { font-size: 2rem; }
+            .filter-bar { flex-direction: column; align-items: center; }
+            .scheme-actions { flex-direction: column; }
+            .btn-primary, .btn-secondary { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">🌾 Krishi Sathi</a>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="weather.html">Weather</a></li>
+                    <li><a href="seeds-crops.html">Seeds & Crops</a></li>
+                    <li><a href="pesticides.html">Pesticides</a></li>
+                    <li><a href="schemes.html" class="active">Schemes</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <select id="languageSelect" onchange="changeLanguage()">
+                    <option value="en">English</option>
+                    <option value="hi">हिन्दी</option>
+                    <option value="mr">मराठी</option>
+                    <option value="kn">ಕನ್ನಡ</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="page-hero schemes-hero">
+            <div class="container">
+                <h1 class="page-title">💰 <span data-translate="schemes-title">Government Schemes</span></h1>
+                <p class="page-subtitle" data-translate="schemes-subtitle">Loans, subsidies, and support programs for farmers</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="filter-bar">
+                    <select id="schemeTypeFilter" onchange="filterBySchemeType()">
+                        <option value="all" data-translate="all-schemes">All Schemes</option>
+                        <option value="loan" data-translate="loans">Loans</option>
+                        <option value="subsidy" data-translate="subsidies">Subsidies</option>
+                        <option value="insurance" data-translate="insurance">Insurance</option>
+                        <option value="grant" data-translate="grants">Grants</option>
+                    </select>
+                    <select id="stateFilter" onchange="filterByState()">
+                        <option value="all" data-translate="all-states">All States</option>
+                        <option value="national" data-translate="national-schemes">National Schemes</option>
+                        <option value="maharashtra" data-translate="maharashtra">Maharashtra</option>
+                        <option value="karnataka" data-translate="karnataka">Karnataka</option>
+                    </select>
+                </div>
+
+                <div id="schemesData" class="data-grid schemes-grid">
+                    <div class="data-card scheme-card">
+                        <div class="scheme-badge" data-translate="active-scheme">Active Scheme</div>
+                        <div class="card-header">
+                            <h3>PM-KISAN (पीएम-किसान)</h3>
+                            <span class="scheme-type subsidy" data-translate="direct-benefit">Direct Benefit</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="scheme-highlight">
+                                <div class="amount">₹6,000/year</div>
+                                <div class="installments" data-translate="in-3-installments">In 3 installments</div>
+                            </div>
+
+                            <div class="scheme-section">
+                                <h4 data-translate="description">📝 Description:</h4>
+                                <p data-translate="pmkisan-desc">Pradhan Mantri Kisan Samman Nidhi provides income support to all landholding farmers' families.</p>
+                            </div>
+
+                            <div class="scheme-section">
+                                <h4 data-translate="eligibility">✅ Eligibility:</h4>
+                                <ul>
+                                    <li data-translate="all-landholding-farmers">All landholding farmers</li>
+                                    <li data-translate="valid-aadhaar">Valid Aadhaar card required</li>
+                                    <li data-translate="bank-account-linked">Bank account linked with Aadhaar</li>
+                                    <li data-translate="land-ownership">Land ownership documents</li>
+                                </ul>
+                            </div>
+
+                            <div class="scheme-section">
+                                <h4 data-translate="how-to-apply">📋 How to Apply:</h4>
+                                <ol>
+                                    <li data-translate="visit-pmkisan-portal">Visit PM-KISAN portal: pmkisan.gov.in</li>
+                                    <li data-translate="click-farmer-corner">Click on "Farmer's Corner"</li>
+                                    <li data-translate="select-new-registration">Select "New Farmer Registration"</li>
+                                    <li data-translate="fill-aadhaar-mobile">Fill Aadhaar number and mobile</li>
+                                    <li data-translate="complete-registration">Complete registration form</li>
+                                    <li data-translate="upload-documents">Upload required documents</li>
+                                    <li data-translate="submit-note-number">Submit and note application number</li>
+                                </ol>
+                            </div>
+
+                            <div class="scheme-contact">
+                                <h4 data-translate="contact-info">📞 Contact Information:</h4>
+                                <p><strong data-translate="helpline">Helpline:</strong> 155261 / 1800-180-1551</p>
+                                <p><strong data-translate="email">Email:</strong> pmkisan-ict@gov.in</p>
+                            </div>
+
+                            <div class="scheme-actions">
+                                <button class="btn-primary" onclick="applyScheme('pmkisan')" data-translate="apply-now">Apply Now</button>
+                                <button class="btn-secondary" onclick="checkStatus('pmkisan')" data-translate="check-status">Check Status</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- More scheme cards will be generated dynamically -->
+                </div>
+
+                <div class="voice-assistant-section">
+                    <button id="voiceButton" class="voice-btn">
+                        <span class="pulse"></span>
+                        <span class="mic-icon">🎤</span>
+                        <span data-translate="ask-about-schemes">Ask about Schemes</span>
+                    </button>
+                    <div id="voiceStatus" class="voice-status" data-translate="voice-status">Click the button to start voice interaction</div>
+                    <div id="voiceTextOutput" class="voice-text-output" style="margin-top: 20px; padding: 15px; background: rgba(255,255,255,0.9); border-radius: 10px; color: #333; font-size: 1rem; line-height: 1.5; max-height: 200px; overflow-y: auto;"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Krishi Sathi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/language-switcher.js"></script>
+    <script src="assets/js/voice-assistant.js"></script>
+    <script src="assets/js/schemes.js"></script>
+</body>
+</html>

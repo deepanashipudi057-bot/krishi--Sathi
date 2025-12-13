@@ -1,0 +1,164 @@
+{
+  "weather_forecasts": [
+    {
+      "id": 1,
+      "location": "Mumbai",
+      "coordinates": {
+        "latitude": 19.0760,
+        "longitude": 72.8777
+      },
+      "date": "2025-10-29",
+      "temperature": "28°C",
+      "temperature_range": {
+        "min": "24°C",
+        "max": "32°C"
+      },
+      "humidity": "65%",
+      "rainfall": "5mm",
+      "wind_speed": "12 km/h",
+      "uv_index": 7,
+      "translations": {
+        "en": {
+          "location_name": "Mumbai",
+          "conditions": "Partly cloudy with mild temperatures",
+          "advice": "Good conditions for irrigation. Consider watering crops in the evening to minimize water loss."
+        },
+        "hi": {
+          "location_name": "मुंबई",
+          "conditions": "हल्के बादल और सामान्य तापमान",
+          "advice": "सिंचाई के लिए अच्छी स्थिति। पानी के नुकसान को कम करने के लिए शाम को फसलों को पानी देने पर विचार करें।"
+        },
+        "mr": {
+          "location_name": "मुंबई",
+          "conditions": "अंशतः ढगाळ आणि सौम्य तापमान",
+          "advice": "सिंचनासाठी चांगली परिस्थिती. पाण्याचे नुकसान कमी करण्यासाठी संध्याकाळी पिकांना पाणी देण्याचा विचार करा."
+        },
+        "kn": {
+          "location_name": "ಮುಂಬೈ",
+          "conditions": "ಭಾಗಶಃ ಮೋಡ ಮತ್ತು ಸೌಮ್ಯ ತಾಪಮಾನ",
+          "advice": "ನೀರಾವರಿಗೆ ಉತ್ತಮ ಪರಿಸ್ಥಿತಿಗಳು. ನೀರಿನ ನಷ್ಟವನ್ನು ಕಡಿಮೆ ಮಾಡಲು ಸಂಜೆ ಬೆಳೆಗಳಿಗೆ ನೀರು ಹಾಕುವುದನ್ನು ಪರಿಗಣಿಸಿ."
+        }
+      }
+    },
+    {
+      "id": 2,
+      "location": "Pune",
+      "coordinates": {
+        "latitude": 18.5204,
+        "longitude": 73.8567
+      },
+      "date": "2025-10-29",
+      "temperature": "26°C",
+      "temperature_range": {
+        "min": "22°C",
+        "max": "30°C"
+      },
+      "humidity": "58%",
+      "rainfall": "0mm",
+      "wind_speed": "15 km/h",
+      "uv_index": 6,
+      "translations": {
+        "en": {
+          "location_name": "Pune",
+          "conditions": "Clear skies with moderate temperatures",
+          "advice": "Perfect weather for harvesting. Ensure crops are dried properly before storage."
+        },
+        "hi": {
+          "location_name": "पुणे",
+          "conditions": "साफ आसमान और मध्यम तापमान",
+          "advice": "कटाई के लिए उत्तम मौसम। भंडारण से पहले सुनिश्चित करें कि फसलें ठीक से सूखी हैं।"
+        },
+        "mr": {
+          "location_name": "पुणे",
+          "conditions": "स्वच्छ आकाश आणि मध्यम तापमान",
+          "advice": "कापणीसाठी योग्य हवामान. साठवण्यापूर्वी पिके योग्यरित्या वाळवलेली असल्याची खात्री करा."
+        },
+        "kn": {
+          "location_name": "ಪುಣೆ",
+          "conditions": "ಸ್ಪಷ್ಟ ಆಕಾಶ ಮತ್ತು ಮಧ್ಯಮ ತಾಪಮಾನ",
+          "advice": "ಕೊಯ್ಲಿಗೆ ಪರಿಪೂರ್ಣ ಹವಾಮಾನ. ಸಂಗ್ರಹಣೆಗೆ ಮೊದಲು ಬೆಳೆಗಳನ್ನು ಸರಿಯಾಗಿ ಒಣಗಿಸಲಾಗಿದೆಯೇ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ."
+        }
+      }
+    },
+    {
+      "id": 3,
+      "location": "Bangalore",
+      "coordinates": {
+        "latitude": 12.9716,
+        "longitude": 77.5946
+      },
+      "date": "2025-10-29",
+      "temperature": "25°C",
+      "temperature_range": {
+        "min": "21°C",
+        "max": "29°C"
+      },
+      "humidity": "70%",
+      "rainfall": "15mm",
+      "wind_speed": "10 km/h",
+      "uv_index": 5,
+      "translations": {
+        "en": {
+          "location_name": "Bangalore",
+          "conditions": "Light rain expected in the evening",
+          "advice": "Postpone pesticide application. Good conditions for transplanting seedlings."
+        },
+        "hi": {
+          "location_name": "बेंगलुरु",
+          "conditions": "शाम को हल्की बारिश की संभावना",
+          "advice": "कीटनाशक का प्रयोग स्थगित करें। पौध रोपण के लिए अच्छी स्थिति।"
+        },
+        "mr": {
+          "location_name": "बेंगलुरु",
+          "conditions": "संध्याकाळी हलका पाऊस अपेक्षित",
+          "advice": "कीटकनाशक वापर पुढे ढकला. रोपे लावण्यासाठी चांगली परिस्थिती."
+        },
+        "kn": {
+          "location_name": "ಬೆಂಗಳೂರು",
+          "conditions": "ಸಂಜೆ ಹಗುರವಾದ ಮಳೆ ನಿರೀಕ್ಷಿತ",
+          "advice": "ಕೀಟನಾಶಕ ಅನ್ವಯವನ್ನು ಮುಂದೂಡಿ. ಮೊಳಕೆಗಳನ್ನು ನೆಡುವುದಕ್ಕೆ ಉತ್ತಮ ಪರಿಸ್ಥಿತಿಗಳು."
+        }
+      }
+    },
+    {
+      "id": 4,
+      "location": "Nashik",
+      "coordinates": {
+        "latitude": 19.9975,
+        "longitude": 73.7898
+      },
+      "date": "2025-10-30",
+      "temperature": "27°C",
+      "temperature_range": {
+        "min": "23°C",
+        "max": "31°C"
+      },
+      "humidity": "62%",
+      "rainfall": "0mm",
+      "wind_speed": "14 km/h",
+      "uv_index": 8,
+      "translations": {
+        "en": {
+          "location_name": "Nashik",
+          "conditions": "Hot and dry conditions expected",
+          "advice": "Increase irrigation frequency. Provide shade for sensitive crops. Monitor for pest activity."
+        },
+        "hi": {
+          "location_name": "नासिक",
+          "conditions": "गर्म और शुष्क स्थिति अपेक्षित",
+          "advice": "सिंचाई की आवृत्ति बढ़ाएं। संवेदनशील फसलों के लिए छाया प्रदान करें। कीट गतिविधि की निगरानी करें।"
+        },
+        "mr": {
+          "location_name": "नाशिक",
+          "conditions": "गरम आणि कोरडी परिस्थिती अपेक्षित",
+          "advice": "सिंचनाची वारंवारता वाढवा. संवेदनशील पिकांसाठी सावली प्रदान करा. कीटक क्रियाकलापांचे निरीक्षण करा."
+        },
+        "kn": {
+          "location_name": "ನಾಸಿಕ್",
+          "conditions": "ಬಿಸಿ ಮತ್ತು ಒಣ ಪರಿಸ್ಥಿತಿಗಳು ನಿರೀಕ್ಷಿತ",
+          "advice": "ನೀರಾವರಿ ಆವರ್ತನವನ್ನು ಹೆಚ್ಚಿಸಿ. ಸೂಕ್ಷ್ಮ ಬೆಳೆಗಳಿಗೆ ನೆರಳು ಒದಗಿಸಿ. ಕೀಟ ಚಟುವಟಿಕೆಯನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಿ."
+        }
+      }
+    }
+  ]
+}
