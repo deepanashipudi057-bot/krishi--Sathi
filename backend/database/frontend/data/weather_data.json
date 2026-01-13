@@ -57,6 +57,7 @@
       "humidity": 70,
       "rainfall": 2,
       "wind_speed": 10,
+      
       "translations": {
         "en": {
           "advice": "Light rain expected. Good for irrigation-dependent crops."
