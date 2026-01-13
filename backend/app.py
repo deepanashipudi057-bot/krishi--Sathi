@@ -35,6 +35,14 @@ def pesticides():
 def schemes():
     return render_template('schemes.html')
 
+@app.route('/weather.html')
+def weather():
+    return render_template('weather.html')
+
+@app.route('/seeds-crops.html')
+def seeds_crops():
+    return render_template('seeds-crops.html')
+
 @app.route('/api/token', methods=['POST'])
 def generate_token():
     """Generate LiveKit access token for voice assistant"""
