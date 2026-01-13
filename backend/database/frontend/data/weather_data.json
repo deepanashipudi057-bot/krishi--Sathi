@@ -1,0 +1,148 @@
+{
+  "weather_forecasts": [
+    {
+      "id": 1,
+      "location": "Mumbai",
+      "date": "2025-11-05",
+      "temperature": 32,
+      "condition": "Partly Cloudy",
+      "humidity": 75,
+      "rainfall": 5,
+      "wind_speed": 15,
+      "translations": {
+        "en": {
+          "advice": "Good conditions for farming. Moderate humidity levels favorable for most crops."
+        },
+        "hi": {
+          "advice": "खेती के लिए अच्छी स्थितियां। अधिकांश फसलों के लिए अनुकूल मध्यम आर्द्रता स्तर।"
+        },
+        "mr": {
+          "advice": "शेतीसाठी चांगल्या परिस्थिती. बहुतेक पिकांसाठी अनुकूल मध्यम आर्द्रता पातळी."
+        },
+        "kn": {
+          "advice": "ಕೃಷಿಗೆ ಉತ್ತಮ ಪರಿಸ್ಥಿತಿಗಳು. ಹೆಚ್ಚಿನ ಬೆಳೆಗಳಿಗೆ ಅನುಕೂಲಕರ ಮಧ್ಯಮ ಆರ್ದ್ರತೆ ಮಟ್ಟಗಳು."
+        }
+      }
+    },
+    {
+      "id": 2,
+      "location": "Pune",
+      "date": "2025-11-05",
+      "temperature": 28,
+      "condition": "Sunny",
+      "humidity": 60,
+      "rainfall": 0,
+      "wind_speed": 12,
+      "translations": {
+        "en": {
+          "advice": "Perfect weather for outdoor activities and farming operations."
+        },
+        "hi": {
+          "advice": "बाहरी गतिविधियों और खेती के कार्यों के लिए उत्तम मौसम।"
+        },
+        "mr": {
+          "advice": "बाह्य क्रियाकलाप आणि शेतीच्या कामांसाठी उत्तम हवामान."
+        },
+        "kn": {
+          "advice": "ಹೊರಾಂಗಣ ಚಟುವಟಿಕೆಗಳು ಮತ್ತು ಕೃಷಿ ಕಾರ್ಯಾಚರಣೆಗಳಿಗೆ ಪರಿಪೂರ್ಣ ಹವಾಮಾನ."
+        }
+      }
+    },
+    {
+      "id": 3,
+      "location": "Bangalore",
+      "date": "2025-11-05",
+      "temperature": 26,
+      "condition": "Cloudy",
+      "humidity": 70,
+      "rainfall": 2,
+      "wind_speed": 10,
+      "translations": {
+        "en": {
+          "advice": "Light rain expected. Good for irrigation-dependent crops."
+        },
+        "hi": {
+          "advice": "हल्की बारिश की उम्मीद। सिंचाई पर निर्भर फसलों के लिए अच्छा।"
+        },
+        "mr": {
+          "advice": "हलक्या पावसाची अपेक्षा. पाणी देण्यावर अवलंबून असलेल्या पिकांसाठी चांगले."
+        },
+        "kn": {
+          "advice": "ಸ್ವಲ್ಪ ಮಳೆ ನಿರೀಕ್ಷಿತ. ನೀರಾವರಿ ಅವಲಂಬಿತ ಬೆಳೆಗಳಿಗೆ ಉತ್ತಮ."
+        }
+      }
+    },
+    {
+      "id": 4,
+      "location": "Delhi",
+      "date": "2025-11-05",
+      "temperature": 30,
+      "condition": "Sunny",
+      "humidity": 45,
+      "rainfall": 0,
+      "wind_speed": 8,
+      "translations": {
+        "en": {
+          "advice": "Excellent conditions for wheat and mustard cultivation."
+        },
+        "hi": {
+          "advice": "गेहूं और सरसों की खेती के लिए उत्कृष्ट स्थितियां।"
+        },
+        "mr": {
+          "advice": "गहू आणि मोहरी पिकांसाठी उत्कृष्ट परिस्थिती."
+        },
+        "kn": {
+          "advice": "ಗೋಧಿ ಮತ್ತು ಸಾಸಿವೆ ಬೆಳೆಗೆ ಉತ್ತಮ ಪರಿಸ್ಥಿತಿಗಳು."
+        }
+      }
+    },
+    {
+      "id": 5,
+      "location": "Chennai",
+      "date": "2025-11-05",
+      "temperature": 34,
+      "condition": "Sunny",
+      "humidity": 65,
+      "rainfall": 0,
+      "wind_speed": 18,
+      "translations": {
+        "en": {
+          "advice": "Good for rice transplantation and vegetable farming."
+        },
+        "hi": {
+          "advice": "चावल की रोपाई और सब्जी की खेती के लिए अच्छा।"
+        },
+        "mr": {
+          "advice": "तांदूळ रोपण आणि भाजीपाल्याच्या शेतीसाठी चांगले."
+        },
+        "kn": {
+          "advice": "ಅಕ್ಕಿ ನಾಟಿ ಮತ್ತು ತರಕಾರಿ ಕೃಷಿಗೆ ಉತ್ತಮ."
+        }
+      }
+    },
+    {
+      "id": 6,
+      "location": "Kolkata",
+      "date": "2025-11-05",
+      "temperature": 29,
+      "condition": "Cloudy",
+      "humidity": 80,
+      "rainfall": 8,
+      "wind_speed": 14,
+      "translations": {
+        "en": {
+          "advice": "Heavy humidity. Consider pest control measures."
+        },
+        "hi": {
+          "advice": "भारी नमी। कीट नियंत्रण उपायों पर विचार करें।"
+        },
+        "mr": {
+          "advice": "जड आर्द्रता. कीटक नियंत्रण उपायांचा विचार करा."
+        },
+        "kn": {
+          "advice": "ಭಾರೀ ಆರ್ದ್ರತೆ. ಕೀಟ ನಿಯಂತ್ರಣ ಕ್ರಮಗಳನ್ನು ಪರಿಗಣಿಸಿ."
+        }
+      }
+    }
+  ]
+}

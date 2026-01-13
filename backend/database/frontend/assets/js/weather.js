@@ -10,16 +10,12 @@ let filteredData = [];
 let currentLanguage = 'en';
 
 // API endpoint
-const API_BASE_URL = 'http://127.0.0.1:5000/api/v1';
+const API_BASE_URL = '/api';
 
 // DOM elements
-let weatherList;
-let filterLocation;
-let searchInput;
+let weatherData;
+let locationSearch;
 let refreshBtn;
-let loadingSpinner;
-let errorMessage;
-let noDataMessage;
 
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
@@ -27,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeElements();
     initializeEventListeners();
     loadWeatherData();
-    
+
     // Listen for language changes
     window.addEventListener('languageChanged', function(e) {
         currentLanguage = e.detail.language;
@@ -40,18 +36,14 @@ document.addEventListener('DOMContentLoaded', function() {
  * Initialize DOM elements
  */
 function initializeElements() {
-    weatherList = document.getElementById('weatherList');
-    filterLocation = document.getElementById('filterLocation');
-    searchInput = document.getElementById('searchInput');
+    weatherData = document.getElementById('weatherData');
+    locationSearch = document.getElementById('locationSearch');
     refreshBtn = document.getElementById('refreshBtn');
-    loadingSpinner = document.getElementById('loadingSpinner');
-    errorMessage = document.getElementById('errorMessage');
-    noDataMessage = document.getElementById('noDataMessage');
-    
+
     console.log('Elements initialized:', {
-        weatherList: !!weatherList,
-        filterLocation: !!filterLocation,
-        searchInput: !!searchInput
+        weatherData: !!weatherData,
+        locationSearch: !!locationSearch,
+        refreshBtn: !!refreshBtn
     });
 }
 
@@ -59,19 +51,12 @@ function initializeElements() {
  * Initialize event listeners
  */
 function initializeEventListeners() {
-    if (filterLocation) {
-        filterLocation.addEventListener('change', applyFilters);
+    if (locationSearch) {
+        locationSearch.addEventListener('input', debounce(filterByLocation, 300));
     }
-    
-    if (searchInput) {
-        searchInput.addEventListener('input', debounce(handleSearch, 300));
-    }
-    
+
     if (refreshBtn) {
-        refreshBtn.addEventListener('click', function() {
-            loadWeatherData();
-            resetFilters();
-        });
+        refreshBtn.addEventListener('click', loadWeatherData);
     }
 }
 
@@ -81,8 +66,6 @@ function initializeEventListeners() {
 async function loadWeatherData() {
     console.log('Loading weather data...');
     showLoading();
-    hideError();
-    hideNoData();
     
     // Try local JSON first (more reliable during development)
     try {
@@ -113,17 +96,17 @@ async function loadWeatherData() {
         // If local JSON fails, try API
         try {
             console.log('Attempting to load from API...');
-            const apiResponse = await fetch(`${API_BASE_URL}/weather?lang=${currentLanguage}`);
-            
+            const apiResponse = await fetch(`${API_BASE_URL}/weather/${currentLanguage}`);
+
             if (!apiResponse.ok) {
                 throw new Error(`API error! status: ${apiResponse.status}`);
             }
-            
+
             const result = await apiResponse.json();
             console.log('Data loaded from API:', result);
-            
-            if (result.success && result.data) {
-                allWeatherData = result.data;
+
+            if (Array.isArray(result) && result.length > 0) {
+                allWeatherData = result;
                 filteredData = [...allWeatherData];
                 console.log('Total weather items loaded from API:', allWeatherData.length);
                 renderWeather();
@@ -213,25 +196,23 @@ function useSampleData() {
  * Render weather list
  */
 function renderWeather() {
-    if (!weatherList) {
-        console.error('Weather list element not found!');
+    if (!weatherData) {
+        console.error('Weather data element not found!');
         return;
     }
-    
-    weatherList.innerHTML = '';
-    
+
+    weatherData.innerHTML = '';
+
     if (filteredData.length === 0) {
-        showNoData();
+        weatherData.innerHTML = '<div class="no-data">No weather data available</div>';
         return;
     }
-    
-    hideNoData();
-    
+
     console.log('Rendering', filteredData.length, 'weather items');
-    
+
     filteredData.forEach((weather, index) => {
         const card = createWeatherCard(weather, index);
-        weatherList.appendChild(card);
+        weatherData.appendChild(card);
     });
 }
 
@@ -357,6 +338,21 @@ function handleSearch() {
 }
 
 /**
+ * Filter by location
+ */
+function filterByLocation() {
+    const searchTerm = locationSearch?.value.toLowerCase().trim();
+    if (!searchTerm) {
+        filteredData = [...allWeatherData];
+    } else {
+        filteredData = allWeatherData.filter(weather =>
+            weather.location.toLowerCase().includes(searchTerm)
+        );
+    }
+    renderWeather();
+}
+
+/**
  * Reset all filters
  */
 function resetFilters() {
@@ -438,39 +434,16 @@ function getLabel(key) {
  * Show/Hide loading spinner
  */
 function showLoading() {
-    if (loadingSpinner) loadingSpinner.style.display = 'flex';
-    if (weatherList) weatherList.style.display = 'none';
-}
-
-function hideLoading() {
-    if (loadingSpinner) loadingSpinner.style.display = 'none';
-    if (weatherList) weatherList.style.display = 'grid';
-}
-
-/**
- * Show/Hide error message
- */
-function showError(message) {
-    if (errorMessage) {
-        errorMessage.textContent = message;
-        errorMessage.style.display = 'block';
+    if (weatherData) {
+        weatherData.innerHTML = '<div class="loading">Loading weather data...</div>';
     }
 }
 
-function hideError() {
-    if (errorMessage) errorMessage.style.display = 'none';
+function hideLoading() {
+    // Loading is handled by renderWeather
 }
 
-/**
- * Show/Hide no data message
- */
-function showNoData() {
-    if (noDataMessage) noDataMessage.style.display = 'block';
-}
 
-function hideNoData() {
-    if (noDataMessage) noDataMessage.style.display = 'none';
-}
 
 /**
  * Debounce function for search input
